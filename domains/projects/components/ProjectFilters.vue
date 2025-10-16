@@ -247,37 +247,282 @@ const clearFilters = () => {
 
 <style scoped>
 .project-filters {
-  background: #f8f9fa;
-  border-radius: 12px;
-  padding: 1.5rem;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-filters:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .filter-label {
-  font-weight: 600;
-  color: #495057;
-  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.filter-label::before {
+  content: '';
+  width: 3px;
+  height: 14px;
+  background: linear-gradient(to bottom, #0000FF, #4169E1);
+  margin-right: 8px;
+  border-radius: 2px;
 }
 
 .filter-section {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid #e9ecef;
 }
 
 .filter-section:last-of-type {
   border-bottom: none;
   padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.btn-sm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border-width: 2px;
+}
+
+.btn-sm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn-sm .badge {
-  font-size: 0.65rem;
-  padding: 0.25em 0.5em;
+  font-size: 0.7rem;
+  padding: 0.3em 0.6em;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0000FF, #4169E1);
+  border-color: #0000FF;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0000CC, #3654C8);
+  border-color: #0000CC;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-info:hover,
+.btn-outline-success:hover,
+.btn-outline-warning:hover,
+.btn-outline-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.form-select-sm {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
+}
+
+.form-select-sm:focus {
+  border-color: #0000FF;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.15);
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #0000FF;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.15);
+}
+
+.input-group-text {
+  border-radius: 8px 0 0 8px;
+  border: 2px solid #e9ecef;
+  border-right: none;
+  background-color: #f8f9fa;
+  color: #6c757d;
 }
 
 .alert-sm {
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem 1rem;
   font-size: 0.85rem;
   margin-bottom: 0;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(13, 110, 253, 0.2);
+  background-color: rgba(13, 110, 253, 0.05);
+  font-weight: 500;
+}
+
+.btn-link {
+  color: #0000FF;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-link:hover {
+  color: #0000CC;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+h5 {
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* ===================================
+   DARK MODE SUPPORT
+   =================================== */
+
+:root[data-bs-theme="dark"] .project-filters,
+.dark .project-filters {
+  background: linear-gradient(to bottom, #2d2d44, #25253a);
+  border-color: #3a3a54;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+:root[data-bs-theme="dark"] .project-filters:hover,
+.dark .project-filters:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+:root[data-bs-theme="dark"] .filter-label,
+.dark .filter-label {
+  color: #f8f9fa;
+}
+
+:root[data-bs-theme="dark"] .filter-label::before,
+.dark .filter-label::before {
+  background: linear-gradient(to bottom, #4d6dff, #6495ED);
+}
+
+:root[data-bs-theme="dark"] .filter-section,
+.dark .filter-section {
+  border-bottom-color: #3a3a54;
+}
+
+:root[data-bs-theme="dark"] .btn-sm,
+.dark .btn-sm {
+  background-color: #2d2d44;
+  border-color: #3a3a54;
+  color: #e9ecef;
+}
+
+:root[data-bs-theme="dark"] .btn-sm:hover,
+.dark .btn-sm:hover {
+  background-color: #3a3a54;
+  border-color: #4d6dff;
+}
+
+:root[data-bs-theme="dark"] .btn-primary.btn-sm,
+.dark .btn-primary.btn-sm {
+  background: linear-gradient(135deg, #4d6dff, #6495ED);
+  border-color: #4d6dff;
+  color: #ffffff;
+}
+
+:root[data-bs-theme="dark"] .btn-primary.btn-sm:hover,
+.dark .btn-primary.btn-sm:hover {
+  background: linear-gradient(135deg, #3d5de6, #5485DD);
+}
+
+:root[data-bs-theme="dark"] .form-select-sm,
+.dark .form-select-sm {
+  background-color: #2d2d44;
+  border-color: #3a3a54;
+  color: #e9ecef;
+}
+
+:root[data-bs-theme="dark"] .form-select-sm:focus,
+.dark .form-select-sm:focus {
+  background-color: #2d2d44;
+  border-color: #4d6dff;
+  box-shadow: 0 0 0 0.2rem rgba(77, 109, 255, 0.25);
+}
+
+:root[data-bs-theme="dark"] .form-control,
+.dark .form-control {
+  background-color: #2d2d44;
+  border-color: #3a3a54;
+  color: #e9ecef;
+}
+
+:root[data-bs-theme="dark"] .form-control:focus,
+.dark .form-control:focus {
+  background-color: #2d2d44;
+  border-color: #4d6dff;
+  box-shadow: 0 0 0 0.2rem rgba(77, 109, 255, 0.25);
+}
+
+:root[data-bs-theme="dark"] .form-control::placeholder,
+.dark .form-control::placeholder {
+  color: #6c757d;
+}
+
+:root[data-bs-theme="dark"] .input-group-text,
+.dark .input-group-text {
+  background-color: #25253a;
+  border-color: #3a3a54;
+  color: #adb5bd;
+}
+
+:root[data-bs-theme="dark"] .alert-sm,
+.dark .alert-sm {
+  background-color: rgba(77, 109, 255, 0.1);
+  border-color: rgba(77, 109, 255, 0.3);
+  color: #a8c5ff;
+}
+
+:root[data-bs-theme="dark"] .btn-link,
+.dark .btn-link {
+  color: #6495ED;
+}
+
+:root[data-bs-theme="dark"] .btn-link:hover,
+.dark .btn-link:hover {
+  color: #4d6dff;
+}
+
+:root[data-bs-theme="dark"] h5,
+.dark h5 {
+  color: #f8f9fa;
+}
+
+/* Badge count styling in dark mode */
+:root[data-bs-theme="dark"] .btn-sm .badge,
+.dark .btn-sm .badge {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+:root[data-bs-theme="dark"] .btn-primary.btn-sm .badge,
+.dark .btn-primary.btn-sm .badge {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  color: #4d6dff !important;
 }
 </style>

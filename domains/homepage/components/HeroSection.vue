@@ -4,24 +4,12 @@
     <div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
       <div class="row align-items-center py-5 mt-md-2 my-lg-3 my-xl-4 my-xxl-5">
 
-        <!-- Right Column: Parallax Images -->
+        <!-- Right Column: Hero Image -->
         <div class="col-lg-7 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-4 mb-md-5 mb-lg-0 pb-3 pb-md-0">
-          <div class="parallax me-lg-n4 me-xl-n5" style="max-width: 667px;">
-            <div class="parallax-layer" data-depth="0.1">
-              <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop"
-                   alt="Water Infrastructure"
-                   class="img-fluid rounded-3">
-            </div>
-            <div class="parallax-layer" data-depth="-0.2">
-              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800&auto=format&fit=crop"
-                   alt="Sanitation Services"
-                   class="img-fluid rounded-3">
-            </div>
-            <div class="parallax-layer" data-depth="0.25">
-              <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?q=80&w=800&auto=format&fit=crop"
-                   alt="Environmental Solutions"
-                   class="img-fluid rounded-3">
-            </div>
+          <div class="me-lg-n4 me-xl-n5" style="max-width: 667px;">
+            <img src="/assets/images/hero/hero-engineer-1.png"
+                 alt="SAWES - African Water Infrastructure Professional"
+                 class="img-fluid rounded-3">
           </div>
         </div>
 
@@ -51,48 +39,16 @@
 </template>
 
 <script setup>
-const { t, locale } = useI18n()
+const { locale } = useI18n()
 const email = ref('')
 
 // Computed path for contact page
 const contactPath = computed(() => locale.value === 'en' ? '/en/contact' : '/contact')
-
-// Initialize Parallax.js on mount
-onMounted(() => {
-  if (typeof window !== 'undefined' && window.Parallax) {
-    const parallaxContainers = document.querySelectorAll('.parallax')
-    parallaxContainers.forEach(container => {
-      new window.Parallax(container, {
-        relativeInput: true,
-        hoverOnly: false
-      })
-    })
-  }
-})
 </script>
 
 <style scoped>
 .fs-lg {
   font-size: 1.125rem;
-}
-
-/* Parallax container */
-.parallax {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.parallax-layer {
-  position: relative;
-  display: block;
-}
-
-.parallax-layer img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 1rem;
 }
 
 /* Input group styling - uses theme variables */

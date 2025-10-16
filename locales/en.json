@@ -221,12 +221,21 @@
     },
     "team": {
       "title": "Team and Organization",
+      "structure_title": "Organizational Structure",
+      "impact_title": "Our Impact",
       "direction": "Company Management",
       "administrative": "Administrative and Financial Service",
       "commercial": "Commercial Service",
       "operations_south": "Operations Managers – Centre-Sud, Centre-Est, Plateau Central Regions",
       "operations_center": "Operations Managers – Centre, Centre-Ouest Regions",
       "data": "Data entry and processing teams"
+    },
+    "stats": {
+      "years_experience": "Years of Experience",
+      "projects_completed": "Projects Completed",
+      "international_partners": "International Partners",
+      "regions_covered": "Regions Covered",
+      "schedule_days": "Monday – Friday"
     },
     "company": {
       "title": "Practical Information",
@@ -290,6 +299,102 @@
   "projects": {
     "title": "Projects and Achievements",
     "subtitle": "Discover our studies, evaluations and field achievements",
+    "hero": {
+      "badge": "Our Portfolio",
+      "title": "Projects & Achievements",
+      "subtitle": "Over 25 years of delivering impactful water, sanitation, and environment projects across West Africa",
+      "stats": {
+        "total_projects": "Completed Projects",
+        "years_experience": "Years Experience",
+        "partners": "Partners"
+      }
+    },
+    "categories": {
+      "studies": "Studies & Feasibility",
+      "evaluations": "Project Evaluations",
+      "management": "Project Management",
+      "urban_services": "Urban Services",
+      "other": "Other Services"
+    },
+    "filters": {
+      "title": "Filter Projects",
+      "by_category": "By Category",
+      "by_status": "By Status",
+      "by_year": "By Year",
+      "search": "Search Projects",
+      "search_placeholder": "Search by title, location, or partner...",
+      "all": "All Projects",
+      "all_status": "All Status",
+      "all_years": "All Years",
+      "clear_all": "Clear Filters",
+      "featured_only": "Featured Projects",
+      "showing_results": "Showing {count} projects filtered by {filters}"
+    },
+    "status": {
+      "completed": "Completed",
+      "ongoing": "Ongoing"
+    },
+    "featured_label": "Featured",
+    "featured": {
+      "title": "Featured Projects"
+    },
+    "view_details": "View Details",
+    "results": {
+      "title": "Project Results",
+      "showing": "Showing",
+      "of": "of",
+      "projects": "projects"
+    },
+    "sort": {
+      "newest": "Newest First",
+      "oldest": "Oldest First",
+      "title_az": "Title A-Z",
+      "title_za": "Title Z-A"
+    },
+    "no_results": {
+      "title": "No Projects Found",
+      "message": "Try adjusting your filter criteria or search query",
+      "clear_filters": "Clear All Filters"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Our team of experts is ready to support your water, sanitation and environment initiatives",
+      "contact": "Contact Us",
+      "services": "Our Services"
+    },
+    "detail": {
+      "overview": "Project Overview",
+      "scope": "Scope of Work",
+      "outcomes": "Outcomes & Impact",
+      "related_topics": "Related Topics",
+      "partners": "Partners & Collaborators",
+      "main_partners": "Main Partners",
+      "execution_partners": "Execution Partners",
+      "technical_partners": "Technical & Financial Partners",
+      "project_info": "Project Information",
+      "category": "Category",
+      "region": "Region",
+      "year": "Year",
+      "status": "Status",
+      "date": "Date",
+      "duration": "Duration",
+      "location": "Location",
+      "capacity": "Capacity",
+      "share": "Share Project",
+      "related_projects": "Related Projects",
+      "link_copied": "Link copied to clipboard!",
+      "cta": {
+        "title": "Interested in Similar Projects?",
+        "description": "Contact us to discuss how we can support your initiatives",
+        "contact": "Contact Us",
+        "back_to_projects": "Back to All Projects"
+      },
+      "not_found": {
+        "title": "Project Not Found",
+        "message": "The project you're looking for doesn't exist or has been removed",
+        "back_to_projects": "Back to Projects"
+      }
+    },
     "filter": {
       "all": "All",
       "studies": "Studies",
@@ -557,13 +662,40 @@
     "subtitle": "Stay informed about our activities, achievements and innovations",
     "hero": {
       "title": "Resources Center",
-      "subtitle": "Access our publications, news, photo gallery and upcoming events"
+      "subtitle": "Access our publications, news, photo gallery and upcoming events",
+      "badge": "Knowledge & Insights"
     },
     "sections": {
       "news": "Latest News",
       "publications": "Publications",
       "gallery": "Photo Gallery",
       "events": "Events & Workshops"
+    },
+    "dropdown": {
+      "title": "Resource Center",
+      "subtitle": "Access our knowledge base and stay informed",
+      "documentation": "Documentation",
+      "media_events": "Media & Events",
+      "more": "More",
+      "all_resources": "All Resources",
+      "news_desc": "Latest news and updates",
+      "publications_desc": "Technical reports and studies",
+      "gallery_desc": "Project photos and visuals",
+      "events_desc": "Workshops and training sessions"
+    },
+    "quick_nav": {
+      "title": "Explore Our Resources",
+      "subtitle": "Access our complete collection of documentation and insights",
+      "news_desc": "Latest updates and announcements",
+      "publications_desc": "Technical reports and studies",
+      "gallery_desc": "Project photos and visuals",
+      "events_desc": "Workshops and training sessions"
+    },
+    "cta": {
+      "view_all": "View All",
+      "subscribe": "Stay Informed",
+      "subscribe_desc": "Stay updated with our latest news, publications and events on water, sanitation and environmental projects",
+      "contact_us": "Contact Us"
     },
     "news": {
       "title": "News & Updates",
@@ -767,7 +899,7 @@
     "contact": "Contact",
     "resources": "Resources",
     "privacy_policy": "Privacy Policy",
-    "rights_reserved": "© 2025 SAWES. All rights reserved.",
+    "rights_reserved": "All rights reserved",
     "quick_links": "Quick Links",
     "follow_us": "Follow Us"
   },
@@ -777,10 +909,12 @@
     "expertise": "Expertise",
     "projects": "Projects",
     "partners": "Partners",
+    "solutions": "Solutions",
     "resources": "Resources",
     "contact": "Contact",
     "careers": "Careers",
-    "privacy_policy": "Privacy Policy"
+    "privacy_policy": "Privacy Policy",
+    "faq": "FAQ"
   },
   "meta": {
     "home": {

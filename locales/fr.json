@@ -221,12 +221,21 @@
     },
     "team": {
       "title": "Équipe et Organigramme",
+      "structure_title": "Structure Organisationnelle",
+      "impact_title": "Notre Impact",
       "direction": "Direction Société",
       "administrative": "Service Administratif et Financier",
       "commercial": "Service Commercial",
       "operations_south": "Responsables des opérations – Régions Centre-Sud, Centre-Est, Plateau Central",
       "operations_center": "Responsables des opérations – Régions Centre, Centre-Ouest",
       "data": "Équipes de saisie et de traitement des données"
+    },
+    "stats": {
+      "years_experience": "Années d'Expérience",
+      "projects_completed": "Projets Réalisés",
+      "international_partners": "Partenaires Internationaux",
+      "regions_covered": "Régions Couvertes",
+      "schedule_days": "Lundi – Vendredi"
     },
     "company": {
       "title": "Informations Pratiques",
@@ -290,6 +299,102 @@
   "projects": {
     "title": "Projets et Réalisations",
     "subtitle": "Découvrez nos études, évaluations et réalisations terrain",
+    "hero": {
+      "badge": "Notre Portfolio",
+      "title": "Projets & Réalisations",
+      "subtitle": "Plus de 25 ans de réalisation de projets impactants en eau, assainissement et environnement en Afrique de l'Ouest",
+      "stats": {
+        "total_projects": "Projets Réalisés",
+        "years_experience": "Ans d'Expérience",
+        "partners": "Partenaires"
+      }
+    },
+    "categories": {
+      "studies": "Études & Faisabilité",
+      "evaluations": "Évaluations de Projets",
+      "management": "Gestion de Projets",
+      "urban_services": "Services Urbains",
+      "other": "Autres Services"
+    },
+    "filters": {
+      "title": "Filtrer les Projets",
+      "by_category": "Par Catégorie",
+      "by_status": "Par Statut",
+      "by_year": "Par Année",
+      "search": "Rechercher des Projets",
+      "search_placeholder": "Rechercher par titre, lieu ou partenaire...",
+      "all": "Tous les Projets",
+      "all_status": "Tous les Statuts",
+      "all_years": "Toutes les Années",
+      "clear_all": "Effacer les Filtres",
+      "featured_only": "Projets Vedettes",
+      "showing_results": "Affichage de {count} projets filtrés par {filters}"
+    },
+    "status": {
+      "completed": "Terminé",
+      "ongoing": "En Cours"
+    },
+    "featured_label": "Vedette",
+    "featured": {
+      "title": "Projets Vedettes"
+    },
+    "view_details": "Voir Détails",
+    "results": {
+      "title": "Résultats des Projets",
+      "showing": "Affichage de",
+      "of": "sur",
+      "projects": "projets"
+    },
+    "sort": {
+      "newest": "Plus Récents",
+      "oldest": "Plus Anciens",
+      "title_az": "Titre A-Z",
+      "title_za": "Titre Z-A"
+    },
+    "no_results": {
+      "title": "Aucun Projet Trouvé",
+      "message": "Essayez d'ajuster vos critères de filtre ou votre requête de recherche",
+      "clear_filters": "Effacer Tous les Filtres"
+    },
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet?",
+      "description": "Notre équipe d'experts est prête à soutenir vos initiatives en eau, assainissement et environnement",
+      "contact": "Nous Contacter",
+      "services": "Nos Services"
+    },
+    "detail": {
+      "overview": "Aperçu du Projet",
+      "scope": "Portée des Travaux",
+      "outcomes": "Résultats & Impact",
+      "related_topics": "Sujets Connexes",
+      "partners": "Partenaires & Collaborateurs",
+      "main_partners": "Partenaires Principaux",
+      "execution_partners": "Partenaires d'Exécution",
+      "technical_partners": "Partenaires Techniques & Financiers",
+      "project_info": "Informations sur le Projet",
+      "category": "Catégorie",
+      "region": "Région",
+      "year": "Année",
+      "status": "Statut",
+      "date": "Date",
+      "duration": "Durée",
+      "location": "Localisation",
+      "capacity": "Capacité",
+      "share": "Partager le Projet",
+      "related_projects": "Projets Connexes",
+      "link_copied": "Lien copié dans le presse-papiers!",
+      "cta": {
+        "title": "Intéressé par des Projets Similaires?",
+        "description": "Contactez-nous pour discuter de comment nous pouvons soutenir vos initiatives",
+        "contact": "Nous Contacter",
+        "back_to_projects": "Retour à Tous les Projets"
+      },
+      "not_found": {
+        "title": "Projet Non Trouvé",
+        "message": "Le projet que vous recherchez n'existe pas ou a été supprimé",
+        "back_to_projects": "Retour aux Projets"
+      }
+    },
     "filter": {
       "all": "Tous",
       "studies": "Études",
@@ -557,13 +662,40 @@
     "subtitle": "Restez informé de nos activités, réalisations et innovations",
     "hero": {
       "title": "Centre de Ressources",
-      "subtitle": "Accédez à nos publications, actualités, galerie photos et événements à venir"
+      "subtitle": "Accédez à nos publications, actualités, galerie photos et événements à venir",
+      "badge": "Connaissances & Perspectives"
     },
     "sections": {
       "news": "Dernières Actualités",
       "publications": "Publications",
       "gallery": "Galerie Photos",
       "events": "Événements & Ateliers"
+    },
+    "dropdown": {
+      "title": "Centre de Ressources",
+      "subtitle": "Accédez à notre base de connaissances et restez informé",
+      "documentation": "Documentation",
+      "media_events": "Médias & Événements",
+      "more": "Plus",
+      "all_resources": "Toutes les Ressources",
+      "news_desc": "Dernières nouvelles et mises à jour",
+      "publications_desc": "Rapports techniques et études",
+      "gallery_desc": "Photos de projets et visuels",
+      "events_desc": "Ateliers et sessions de formation"
+    },
+    "quick_nav": {
+      "title": "Explorez Nos Ressources",
+      "subtitle": "Accédez à notre collection complète de documentation et d'informations",
+      "news_desc": "Dernières mises à jour et annonces",
+      "publications_desc": "Rapports techniques et études",
+      "gallery_desc": "Photos et visuels de projets",
+      "events_desc": "Ateliers et sessions de formation"
+    },
+    "cta": {
+      "view_all": "Voir Tout",
+      "subscribe": "Restez Informé",
+      "subscribe_desc": "Recevez les dernières nouvelles, publications et événements sur nos projets d'eau, d'assainissement et d'environnement",
+      "contact_us": "Contactez-Nous"
     },
     "news": {
       "title": "Actualités & Nouvelles",
@@ -767,7 +899,7 @@
     "contact": "Contact",
     "resources": "Ressources",
     "privacy_policy": "Politique de Confidentialité",
-    "rights_reserved": "© 2025 SAWES. Tous droits réservés.",
+    "rights_reserved": "Tous droits réservés",
     "quick_links": "Liens Rapides",
     "follow_us": "Suivez-Nous"
   },
@@ -777,10 +909,12 @@
     "expertise": "Expertises",
     "projects": "Projets",
     "partners": "Partenaires",
+    "solutions": "Solutions",
     "resources": "Ressources",
     "contact": "Contact",
     "careers": "Carrières",
-    "privacy_policy": "Politique de Confidentialité"
+    "privacy_policy": "Politique de Confidentialité",
+    "faq": "FAQ"
   },
   "meta": {
     "home": {

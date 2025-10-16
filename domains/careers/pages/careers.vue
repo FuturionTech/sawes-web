@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="bg-dark position-relative py-4" style="margin-top: 80px;">
+    <section class="bg-dark position-relative py-4 page-header-spacing">
       <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .03);"></div>
       <div class="container position-relative z-2 py-4">
         <div class="row">
@@ -345,5 +345,22 @@ useHead({
 /* Badge styles */
 .badge {
   font-weight: 600;
+}
+
+/* Page header spacing - accounts for fixed navbar */
+.page-header-spacing {
+  padding-top: 72px;
+}
+
+@media (max-width: 991.98px) {
+  .page-header-spacing {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header-spacing {
+    padding-top: 60px;
+  }
 }
 </style>

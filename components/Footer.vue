@@ -93,8 +93,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
             <p class="mb-0 text-muted small">
-              &copy; 2025 {{ $t('footer.rights_reserved') }} 
-              <a href="https://sawes.bf" target="_blank" rel="noopener" class="text-primary fw-semibold">SAWES</a>
+              &copy; 2025 <a href="https://sawes.bf" target="_blank" rel="noopener" class="text-primary fw-semibold">SAWES</a>. {{ $t('footer.rights_reserved') }}
             </p>
           </div>
           <div class="col-md-6 text-center text-md-end">

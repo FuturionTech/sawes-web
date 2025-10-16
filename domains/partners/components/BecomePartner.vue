@@ -85,7 +85,7 @@
                   <!-- CTA Buttons -->
                   <div class="d-flex flex-wrap gap-3">
                     <NuxtLink
-                      :to="localePath('/contact')"
+                      :to="contactLink"
                       class="btn btn-primary btn-lg px-4"
                     >
                       <i class="bi bi-envelope me-2"></i>
@@ -139,8 +139,11 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
-const localePath = useLocalePath()
+const { t, locale } = useI18n()
+
+const contactLink = computed(() => {
+  return locale.value === 'fr' ? '/contact' : '/en/contact'
+})
 
 const downloadBrochure = () => {
   // Placeholder for brochure download functionality

@@ -1,45 +1,55 @@
 <template>
   <div class="projects-page">
     <!-- Hero Section -->
-    <section class="hero-section bg-gradient py-5">
-      <div class="container py-5">
+    <section class="hero-section page-header-spacing">
+      <div class="container py-5 position-relative">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="pt-3 pb-2">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><NuxtLink to="/" class="text-white-50">{{ $t('breadcrumbs.home') }}</NuxtLink></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">{{ $t('breadcrumbs.projects') }}</li>
+          </ol>
+        </nav>
+
         <div class="row align-items-center">
           <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
             <div class="mb-3">
-              <span class="badge bg-white bg-opacity-25 text-white px-3 py-2">
-                <i class="bi bi-briefcase me-2"></i>
+              <span class="badge bg-primary bg-opacity-10 text-primary fw-semibold px-3 py-2 rounded-pill">
+                <i class="bi bi-briefcase-fill me-2"></i>
                 {{ $t('projects.hero.badge') }}
               </span>
             </div>
-            <h1 class="display-4 fw-bold text-white mb-4">
+            <h1 class="display-3 fw-bold mb-4">
               {{ $t('projects.hero.title') }}
             </h1>
-            <p class="lead text-white mb-4">
+            <p class="lead text-body-secondary mb-5 fs-4" style="max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.8;">
               {{ $t('projects.hero.subtitle') }}
             </p>
-            <div class="d-flex justify-content-center gap-4 mb-4">
-              <div class="stat-item text-white" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="display-5 fw-bold mb-0">{{ projectStats.total }}+</h2>
-                <p class="mb-0">{{ $t('projects.hero.stats.total_projects') }}</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 mb-4">
+              <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-icon mb-3">
+                  <i class="bi bi-briefcase-fill text-primary"></i>
+                </div>
+                <h2 class="display-4 fw-bold mb-2 text-primary">{{ projectStats.total }}+</h2>
+                <p class="mb-0 fw-semibold text-body-secondary">{{ $t('projects.hero.stats.total_projects') }}</p>
               </div>
-              <div class="stat-item text-white" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="display-5 fw-bold mb-0">25+</h2>
-                <p class="mb-0">{{ $t('projects.hero.stats.years_experience') }}</p>
+              <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-icon mb-3">
+                  <i class="bi bi-calendar-check-fill text-primary"></i>
+                </div>
+                <h2 class="display-4 fw-bold mb-2 text-primary">25+</h2>
+                <p class="mb-0 fw-semibold text-body-secondary">{{ $t('projects.hero.stats.years_experience') }}</p>
               </div>
-              <div class="stat-item text-white" data-aos="fade-up" data-aos-delay="300">
-                <h2 class="display-5 fw-bold mb-0">15+</h2>
-                <p class="mb-0">{{ $t('projects.hero.stats.partners') }}</p>
+              <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-icon mb-3">
+                  <i class="bi bi-people-fill text-primary"></i>
+                </div>
+                <h2 class="display-4 fw-bold mb-2 text-primary">15+</h2>
+                <p class="mb-0 fw-semibold text-body-secondary">{{ $t('projects.hero.stats.partners') }}</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="wave-divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-        </svg>
       </div>
     </section>
 
@@ -346,9 +356,10 @@ watch([selectedCategory, selectedStatus, selectedYear, selectedFeatured, searchQ
 
 <style scoped>
 .hero-section {
-  background: linear-gradient(135deg, #0000FF 0%, #4169E1 100%);
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   position: relative;
   overflow: hidden;
+  min-height: 450px;
 }
 
 .hero-section::before {
@@ -358,35 +369,62 @@ watch([selectedCategory, selectedStatus, selectedYear, selectedFeatured, searchQ
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.4;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(13, 110, 253, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(13, 110, 253, 0.05) 0%, transparent 50%);
+  background-size: 100% 100%;
+  z-index: 0;
 }
 
-.wave-divider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave-divider svg {
+.hero-section .container {
   position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 80px;
-}
-
-.wave-divider .shape-fill {
-  fill: #FFFFFF;
+  z-index: 1;
 }
 
 .stat-item {
-  padding: 1rem;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  background: white;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stat-item:hover {
+  background: white;
+  transform: translateY(-4px);
+  border-color: rgba(13, 110, 253, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.stat-item h2 {
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(13, 110, 253, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.75rem;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover .stat-icon {
+  background: rgba(13, 110, 253, 0.15);
+  transform: scale(1.1);
+}
+
+.badge {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .sticky-top {
@@ -395,27 +433,438 @@ watch([selectedCategory, selectedStatus, selectedYear, selectedFeatured, searchQ
 }
 
 .pagination {
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 
 .page-link {
-  border-radius: 8px;
-  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
   color: #0000FF;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 .page-item.active .page-link {
-  background-color: #0000FF;
+  background: linear-gradient(135deg, #0000FF, #4169E1);
   border-color: #0000FF;
+  box-shadow: 0 4px 12px rgba(0, 0, 255, 0.3);
 }
 
-.page-link:hover {
+.page-link:hover:not(.active .page-link) {
   background-color: #f8f9fa;
   color: #0000FF;
+  border-color: #0000FF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-item.disabled .page-link {
+  background-color: #f8f9fa;
+  border-color: #e9ecef;
+  color: #adb5bd;
 }
 
 .cta-section {
-  border-top: 1px solid #dee2e6;
+  border-top: 3px solid #e9ecef;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.cta-section h2 {
+  color: #1a1a2e;
+  font-weight: 800;
+}
+
+.lead {
+  font-weight: 500;
+  color: #6c757d;
+  line-height: 1.8;
+}
+
+/* Breadcrumb styling for dark background */
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--bs-secondary);
+  font-weight: 600;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 500;
+  color: var(--bs-link-color);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--bs-link-hover-color) !important;
+}
+
+.breadcrumb-item.active {
+  font-weight: 600;
+  color: var(--bs-body-color);
+}
+
+/* Page header spacing - accounts for fixed navbar */
+.page-header-spacing {
+  padding-top: 56px;
+}
+
+@media (max-width: 991.98px) {
+  .page-header-spacing {
+    padding-top: 56px;
+  }
+  
+  .stat-item {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header-spacing {
+    padding-top: 56px;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+}
+
+/* Project grid improvements */
+.row.g-4 {
+  row-gap: 2rem !important;
+}
+
+h4, h5 {
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+.form-select {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.form-select:focus {
+  border-color: #0000FF;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.15);
+}
+
+/* No results styling */
+.bi-inbox {
+  color: #dee2e6 !important;
+}
+
+/* Button improvements */
+.btn-primary {
+  background: linear-gradient(135deg, #0000FF, #4169E1);
+  border: none;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 255, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0000CC, #3654C8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 255, 0.3);
+}
+
+.btn-outline-primary {
+  border: 2px solid #0000FF;
+  color: #0000FF;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: #0000FF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 255, 0.2);
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* ===================================
+   DARK MODE SUPPORT
+   =================================== */
+
+/* Hero section in dark mode */
+:root[data-bs-theme="dark"] .hero-section,
+.dark .hero-section {
+  background: linear-gradient(135deg, #1a1d20 0%, #2d3436 100%);
+}
+
+:root[data-bs-theme="dark"] .hero-section::before,
+.dark .hero-section::before {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(13, 110, 253, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(13, 110, 253, 0.08) 0%, transparent 50%);
+}
+
+/* Stat items in dark mode */
+:root[data-bs-theme="dark"] .stat-item,
+.dark .stat-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-bs-theme="dark"] .stat-item:hover,
+.dark .stat-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(13, 110, 253, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+:root[data-bs-theme="dark"] .stat-icon,
+.dark .stat-icon {
+  background: rgba(13, 110, 253, 0.15);
+}
+
+:root[data-bs-theme="dark"] .stat-item:hover .stat-icon,
+.dark .stat-item:hover .stat-icon {
+  background: rgba(13, 110, 253, 0.25);
+}
+
+/* Main content areas */
+:root[data-bs-theme="dark"] .projects-page,
+.dark .projects-page {
+  background: #1a1a2e;
+  color: #e9ecef;
+}
+
+:root[data-bs-theme="dark"] h4,
+:root[data-bs-theme="dark"] h5,
+.dark h4,
+.dark h5 {
+  color: #f8f9fa;
+}
+
+/* Filter sidebar in dark mode */
+:root[data-bs-theme="dark"] .project-filters,
+.dark .project-filters {
+  background: linear-gradient(to bottom, #2d2d44, #25253a);
+  border-color: #3a3a54;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+:root[data-bs-theme="dark"] .filter-label,
+.dark .filter-label {
+  color: #f8f9fa;
+}
+
+:root[data-bs-theme="dark"] .filter-section,
+.dark .filter-section {
+  border-bottom-color: #3a3a54;
+}
+
+:root[data-bs-theme="dark"] .form-select,
+:root[data-bs-theme="dark"] .form-control,
+.dark .form-select,
+.dark .form-control {
+  background-color: #2d2d44;
+  border-color: #3a3a54;
+  color: #e9ecef;
+}
+
+:root[data-bs-theme="dark"] .form-select:focus,
+:root[data-bs-theme="dark"] .form-control:focus,
+.dark .form-select:focus,
+.dark .form-control:focus {
+  background-color: #2d2d44;
+  border-color: #4d6dff;
+  color: #e9ecef;
+}
+
+:root[data-bs-theme="dark"] .input-group-text,
+.dark .input-group-text {
+  background-color: #25253a;
+  border-color: #3a3a54;
+  color: #adb5bd;
+}
+
+/* Card backgrounds in dark mode */
+:root[data-bs-theme="dark"] .project-card,
+.dark .project-card {
+  background: #25253a;
+  border-color: #3a3a54;
+}
+
+:root[data-bs-theme="dark"] .project-card:hover,
+.dark .project-card:hover {
+  box-shadow: 0 12px 32px rgba(77, 109, 255, 0.2), 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+:root[data-bs-theme="dark"] .project-card::before,
+.dark .project-card::before {
+  background: linear-gradient(135deg, rgba(77, 109, 255, 0.2), rgba(100, 149, 237, 0.2));
+}
+
+:root[data-bs-theme="dark"] .featured-project,
+.dark .featured-project {
+  border-color: #4d6dff !important;
+  background: linear-gradient(to bottom, rgba(77, 109, 255, 0.05), #25253a);
+}
+
+:root[data-bs-theme="dark"] .card-title,
+.dark .card-title {
+  color: #f8f9fa;
+}
+
+:root[data-bs-theme="dark"] .project-card:hover .card-title,
+.dark .project-card:hover .card-title {
+  color: #6495ED;
+}
+
+:root[data-bs-theme="dark"] .card-text,
+.dark .card-text {
+  color: #adb5bd;
+}
+
+:root[data-bs-theme="dark"] .text-muted,
+.dark .text-muted {
+  color: #adb5bd !important;
+}
+
+/* Badge adjustments */
+:root[data-bs-theme="dark"] .badge.bg-light,
+.dark .badge.bg-light {
+  background-color: #2d2d44 !important;
+  border-color: #3a3a54;
+  color: #e9ecef !important;
+}
+
+:root[data-bs-theme="dark"] .badge.bg-secondary,
+.dark .badge.bg-secondary {
+  background-color: rgba(173, 181, 189, 0.15) !important;
+  color: #e9ecef !important;
+}
+
+/* CTA section */
+:root[data-bs-theme="dark"] .cta-section,
+.dark .cta-section {
+  background: linear-gradient(to bottom, #25253a, #2d2d44);
+  border-top-color: #3a3a54;
+}
+
+:root[data-bs-theme="dark"] .cta-section h2,
+.dark .cta-section h2 {
+  color: #f8f9fa;
+}
+
+:root[data-bs-theme="dark"] .lead,
+.dark .lead {
+  color: #adb5bd;
+}
+
+/* Pagination */
+:root[data-bs-theme="dark"] .page-link,
+.dark .page-link {
+  background-color: #2d2d44;
+  border-color: #3a3a54;
+  color: #6495ED;
+}
+
+:root[data-bs-theme="dark"] .page-link:hover:not(.active .page-link),
+.dark .page-link:hover:not(.active .page-link) {
+  background-color: #3a3a54;
+  border-color: #4d6dff;
+  color: #6495ED;
+}
+
+:root[data-bs-theme="dark"] .page-item.disabled .page-link,
+.dark .page-item.disabled .page-link {
+  background-color: #25253a;
+  border-color: #3a3a54;
+  color: #6c757d;
+}
+
+/* Buttons in dark mode */
+:root[data-bs-theme="dark"] .btn-primary,
+.dark .btn-primary {
+  background: linear-gradient(135deg, #4d6dff, #6495ED);
+}
+
+:root[data-bs-theme="dark"] .btn-primary:hover,
+.dark .btn-primary:hover {
+  background: linear-gradient(135deg, #3d5de6, #5485DD);
+}
+
+:root[data-bs-theme="dark"] .btn-outline-primary,
+.dark .btn-outline-primary {
+  border-color: #4d6dff;
+  color: #6495ED;
+}
+
+:root[data-bs-theme="dark"] .btn-outline-primary:hover,
+.dark .btn-outline-primary:hover {
+  background: #4d6dff;
+  border-color: #4d6dff;
+  color: #ffffff;
+}
+
+/* Filter button styles */
+:root[data-bs-theme="dark"] .btn-sm,
+.dark .btn-sm {
+  background-color: #2d2d44;
+  border-color: #3a3a54;
+  color: #e9ecef;
+}
+
+:root[data-bs-theme="dark"] .btn-primary.btn-sm,
+.dark .btn-primary.btn-sm {
+  background: linear-gradient(135deg, #4d6dff, #6495ED);
+  border-color: #4d6dff;
+  color: #ffffff;
+}
+
+:root[data-bs-theme="dark"] .btn-link,
+.dark .btn-link {
+  color: #6495ED;
+}
+
+:root[data-bs-theme="dark"] .btn-link:hover,
+.dark .btn-link:hover {
+  color: #4d6dff;
+}
+
+/* Alert in dark mode */
+:root[data-bs-theme="dark"] .alert-sm,
+.dark .alert-sm {
+  background-color: rgba(77, 109, 255, 0.1);
+  border-color: rgba(77, 109, 255, 0.3);
+  color: #a8c5ff;
+}
+
+/* No results icon */
+:root[data-bs-theme="dark"] .bi-inbox,
+.dark .bi-inbox {
+  color: #3a3a54 !important;
+}
+
+/* Card image background in dark mode */
+:root[data-bs-theme="dark"] .card-img-top-wrapper,
+.dark .card-img-top-wrapper {
+  background: linear-gradient(135deg, #2d2d44, #25253a);
+}
+
+/* Improve text contrast on gradient backgrounds */
+:root[data-bs-theme="dark"] .project-card .badge,
+.dark .project-card .badge {
+  font-weight: 600;
 }
 </style>

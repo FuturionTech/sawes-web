@@ -1,14 +1,54 @@
 <template>
   <div class="news-page">
     <!-- Hero Section -->
-    <section class="bg-primary text-white py-5">
-      <div class="container">
-        <div class="row justify-content-center">
+    <section class="position-relative bg-primary text-white overflow-hidden" style="margin-top: 88px;">
+      <!-- Background pattern overlay -->
+      <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10">
+        <div class="position-absolute top-0 start-0 w-100 h-100" 
+             style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);">
+        </div>
+      </div>
+
+      <div class="container position-relative py-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="pt-4 pb-3">
+          <ol class="breadcrumb breadcrumb-light mb-0">
+            <li class="breadcrumb-item">
+              <NuxtLink to="/" class="text-white-50 text-decoration-none">
+                <i class="bi bi-house-door me-1"></i>
+                {{ $t('breadcrumbs.home') }}
+              </NuxtLink>
+            </li>
+            <li class="breadcrumb-item">
+              <NuxtLink :to="currentLocale === 'fr' ? '/ressources' : '/en/resources'" class="text-white-50 text-decoration-none">
+                {{ $t('breadcrumbs.resources') }}
+              </NuxtLink>
+            </li>
+            <li class="breadcrumb-item active text-white" aria-current="page">
+              {{ $t('resources.news.title') }}
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="row justify-content-center py-5">
           <div class="col-lg-8 text-center">
-            <h1 class="display-4 fw-bold mb-3">
+            <!-- Icon -->
+            <div class="mb-4" data-aos="fade-up">
+              <div class="icon-box d-inline-block">
+                <div class="bg-white bg-opacity-10 rounded-circle p-4">
+                  <i class="bi bi-newspaper text-white" style="font-size: 3rem;"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Title -->
+            <h1 class="display-3 fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">
               {{ $t('resources.news.title') }}
             </h1>
-            <p class="lead">
+
+            <!-- Subtitle -->
+            <p class="lead fs-4 text-white-75" data-aos="fade-up" data-aos-delay="200">
               {{ $t('resources.news.subtitle') }}
             </p>
           </div>
@@ -117,3 +157,42 @@ useHead({
   ]
 })
 </script>
+
+<style scoped>
+/* Breadcrumb styling for dark background */
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: white !important;
+}
+
+/* Page header spacing - accounts for fixed navbar */
+.page-header-spacing {
+  padding-top: 72px;
+}
+
+@media (max-width: 991.98px) {
+  .page-header-spacing {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header-spacing {
+    padding-top: 60px;
+  }
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div v-if="project" class="project-detail-page">
     <!-- Hero Section -->
-    <section class="project-hero bg-gradient py-5">
+    <section class="project-hero bg-gradient page-header-spacing">
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-10 mx-auto">
@@ -529,5 +529,22 @@ const copyLink = async () => {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
+}
+
+/* Page header spacing - accounts for fixed navbar */
+.page-header-spacing {
+  padding-top: 56px;
+}
+
+@media (max-width: 991.98px) {
+  .page-header-spacing {
+    padding-top: 56px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header-spacing {
+    padding-top: 56px;
+  }
 }
 </style>

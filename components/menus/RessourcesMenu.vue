@@ -1,132 +1,106 @@
 <template>
   <li class="nav-item dropdown">
-    <NuxtLink class="nav-link dropdown-toggle fw-semibold" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button">
-      Resources
-    </NuxtLink>
-    <div class="dropdown-menu resources-dropdown shadow-lg border-0" style="min-width: 520px;">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button">
+      {{ $t('header.resources') }}
+    </a>
+    <div class="dropdown-menu resources-dropdown shadow-lg border-0">
       <!-- Header Section -->
       <div class="dropdown-header-section">
-        <h6 class="dropdown-header-title">Knowledge Center</h6>
-        <p class="dropdown-header-subtitle">Resources to accelerate your data journey</p>
+        <h6 class="dropdown-header-title">{{ $t('resources.dropdown.title') || 'Resource Center' }}</h6>
+        <p class="dropdown-header-subtitle">{{ $t('resources.dropdown.subtitle') || 'Access our knowledge base and stay informed' }}</p>
       </div>
 
       <div class="row g-3">
-        <!-- Learning & Documentation -->
+        <!-- Documentation & Publications -->
         <div class="col-md-6">
           <div class="resource-category">
             <h6 class="resource-category-title">
-              <i class="ai-book me-2"></i>
-              Learning & Support
+              <i class="bi bi-journal-text me-2"></i>
+              {{ $t('resources.dropdown.documentation') || 'Documentation' }}
             </h6>
 
-            <NuxtLink class="resource-dropdown-item" to="/resources/documentation">
-              <div class="resource-icon-wrapper docs">
-                <i class="ai-file-text"></i>
+            <NuxtLink :to="newsPath" class="resource-dropdown-item">
+              <div class="resource-icon-wrapper news">
+                <i class="bi bi-newspaper"></i>
               </div>
               <div class="resource-content">
-                <div class="resource-title">Documentation</div>
-                <div class="resource-description">API guides, tutorials, and best practices</div>
+                <div class="resource-title">{{ $t('resources.sections.news') }}</div>
+                <div class="resource-description">{{ $t('resources.dropdown.news_desc') || 'Latest news and updates' }}</div>
               </div>
               <div class="resource-arrow">
-                <i class="fa fa-arrow-right"></i>
+                <i class="bi bi-arrow-right"></i>
               </div>
             </NuxtLink>
 
-            <NuxtLink class="resource-dropdown-item" to="/resources/case-studies">
-              <div class="resource-icon-wrapper case-studies">
-                <i class="ai-chart"></i>
+            <NuxtLink :to="publicationsPath" class="resource-dropdown-item">
+              <div class="resource-icon-wrapper publications">
+                <i class="bi bi-file-earmark-pdf"></i>
               </div>
               <div class="resource-content">
-                <div class="resource-title">Case Studies</div>
-                <div class="resource-description">Real-world success stories and insights</div>
+                <div class="resource-title">{{ $t('resources.sections.publications') }}</div>
+                <div class="resource-description">{{ $t('resources.dropdown.publications_desc') || 'Technical reports and studies' }}</div>
               </div>
               <div class="resource-arrow">
-                <i class="fa fa-arrow-right"></i>
-              </div>
-            </NuxtLink>
-
-            <NuxtLink class="resource-dropdown-item" to="/resources/webinars">
-              <div class="resource-icon-wrapper webinars">
-                <i class="ai-video"></i>
-              </div>
-              <div class="resource-content">
-                <div class="resource-title">Webinars</div>
-                <div class="resource-description">Expert sessions and live demonstrations</div>
-              </div>
-              <div class="resource-arrow">
-                <i class="fa fa-arrow-right"></i>
+                <i class="bi bi-arrow-right"></i>
               </div>
             </NuxtLink>
           </div>
         </div>
 
-        <!-- Downloads & Tools -->
+        <!-- Media & Events -->
         <div class="col-md-6">
           <div class="resource-category">
             <h6 class="resource-category-title">
-              <i class="ai-download me-2"></i>
-              Downloads & Tools
+              <i class="bi bi-collection me-2"></i>
+              {{ $t('resources.dropdown.media_events') || 'Media & Events' }}
             </h6>
 
-            <NuxtLink class="resource-dropdown-item" to="/resources/whitepapers">
-              <div class="resource-icon-wrapper whitepapers">
-                <i class="ai-open-book"></i>
+            <NuxtLink :to="galleryPath" class="resource-dropdown-item">
+              <div class="resource-icon-wrapper gallery">
+                <i class="bi bi-images"></i>
               </div>
               <div class="resource-content">
-                <div class="resource-title">Whitepapers</div>
-                <div class="resource-description">Industry research and trend analysis</div>
+                <div class="resource-title">{{ $t('resources.sections.gallery') }}</div>
+                <div class="resource-description">{{ $t('resources.dropdown.gallery_desc') || 'Project photos and visuals' }}</div>
               </div>
               <div class="resource-arrow">
-                <i class="fa fa-arrow-right"></i>
+                <i class="bi bi-arrow-right"></i>
               </div>
             </NuxtLink>
 
-            <NuxtLink class="resource-dropdown-item" to="/resources/templates">
-              <div class="resource-icon-wrapper templates">
-                <i class="ai-layer"></i>
+            <NuxtLink :to="eventsPath" class="resource-dropdown-item">
+              <div class="resource-icon-wrapper events">
+                <i class="bi bi-calendar-event"></i>
               </div>
               <div class="resource-content">
-                <div class="resource-title">Templates</div>
-                <div class="resource-description">Ready-to-use data models and dashboards</div>
+                <div class="resource-title">{{ $t('resources.sections.events') }}</div>
+                <div class="resource-description">{{ $t('resources.dropdown.events_desc') || 'Workshops and training sessions' }}</div>
               </div>
               <div class="resource-arrow">
-                <i class="fa fa-arrow-right"></i>
-              </div>
-            </NuxtLink>
-
-            <NuxtLink class="resource-dropdown-item" to="/resources/tools">
-              <div class="resource-icon-wrapper tools">
-                <i class="ai-tool"></i>
-              </div>
-              <div class="resource-content">
-                <div class="resource-title">Free Tools</div>
-                <div class="resource-description">Calculators, assessments, and utilities</div>
-              </div>
-              <div class="resource-arrow">
-                <i class="fa fa-arrow-right"></i>
+                <i class="bi bi-arrow-right"></i>
               </div>
             </NuxtLink>
           </div>
         </div>
       </div>
 
-      <!-- Support Section -->
+      <!-- Additional Links Section -->
       <div class="support-section">
         <div class="support-header">
-          <span class="support-label">Need Help?</span>
+          <span class="support-label">{{ $t('resources.dropdown.more') || 'More' }}</span>
         </div>
         <div class="support-links">
-          <NuxtLink class="support-link" to="/resources/faq">
-            <i class="ai-circle-help"></i>
-            FAQ
+          <NuxtLink class="support-link" :to="resourcesPath">
+            <i class="bi bi-grid"></i>
+            {{ $t('resources.dropdown.all_resources') || 'All Resources' }}
           </NuxtLink>
-          <NuxtLink class="support-link" to="/contact">
-            <i class="ai-phone-call"></i>
-            Contact Support
+          <NuxtLink class="support-link" :to="faqPath">
+            <i class="bi bi-question-circle"></i>
+            {{ $t('header.faq') || 'FAQ' }}
           </NuxtLink>
-          <NuxtLink class="support-link" to="/resources/careers">
-            <i class="ai-user-plus"></i>
-            Careers
+          <NuxtLink class="support-link" :to="careersPath">
+            <i class="bi bi-briefcase"></i>
+            {{ $t('header.careers') || 'Careers' }}
           </NuxtLink>
         </div>
       </div>
@@ -135,39 +109,44 @@
 </template>
 
 <script setup>
-// Removed useLocalePath as it's not needed with current routing setup
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
+
+// Computed paths for bilingual routes
+const newsPath = computed(() => locale.value === 'en' ? '/en/news' : '/actualites')
+const publicationsPath = computed(() => locale.value === 'en' ? '/en/publications' : '/publications')
+const galleryPath = computed(() => locale.value === 'en' ? '/en/gallery' : '/galerie')
+const eventsPath = computed(() => locale.value === 'en' ? '/en/events' : '/evenements')
+const resourcesPath = computed(() => locale.value === 'en' ? '/en/resources' : '/ressources')
+const faqPath = computed(() => locale.value === 'en' ? '/en/faq' : '/faq')
+const careersPath = computed(() => locale.value === 'en' ? '/en/careers' : '/carrieres')
 </script>
 
 <style scoped>
 /* ===== DROPDOWN TOGGLE STYLES ===== */
 .dropdown-toggle {
-  color: white !important;
-  transition: color 0.2s ease-in-out;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
 }
 
-.dropdown-toggle:hover,
-.dropdown-toggle:focus {
-  color: #0000FF !important;
+.dropdown-toggle::after {
+  vertical-align: 0.2em;
 }
 
 /* ===== DROPDOWN CONTAINER ===== */
 .resources-dropdown {
-  background: rgba(255, 255, 255, 0.98) !important;
+  background: var(--bs-body-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 1.5rem !important;
+  border-radius: 1rem !important;
   margin-top: 0.75rem;
   padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15),
-              0 8px 32px rgba(0, 0, 0, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
-  min-width: 520px;
-  max-width: 570px;
-  /* Better alignment with parent menu item */
-  right: 0 !important;
-  left: auto !important;
-  position: absolute !important;
+  border: 1px solid var(--bs-border-color) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  min-width: 540px;
+  max-width: 600px;
 }
 
 /* ===== HEADER SECTION ===== */
@@ -175,7 +154,7 @@
   margin-bottom: 1.5rem;
   text-align: center;
   padding-bottom: 1rem;
-  border-bottom: 2px solid rgba(0, 0, 255, 0.1);
+  border-bottom: 2px solid var(--bs-primary-border-subtle);
   position: relative;
 }
 
@@ -187,20 +166,20 @@
   transform: translateX(-50%);
   width: 40px;
   height: 2px;
-  background: linear-gradient(90deg, #0000FF, #a855f7);
+  background: var(--bs-primary);
   border-radius: 1px;
 }
 
 .dropdown-header-title {
-  color: #1a1a1a;
+  color: var(--bs-body-color);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   margin-bottom: 0.25rem;
   letter-spacing: -0.02em;
 }
 
 .dropdown-header-subtitle {
-  color: #6b7280;
+  color: var(--bs-secondary-color);
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 0;
@@ -213,14 +192,14 @@
 }
 
 .resource-category-title {
-  color: #374151;
+  color: var(--bs-body-color);
   font-weight: 700;
   font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.75rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(0, 0, 255, 0.1);
+  border-bottom: 1px solid var(--bs-border-color);
 }
 
 /* ===== RESOURCE ITEMS ===== */
@@ -229,40 +208,22 @@
   align-items: center;
   text-decoration: none;
   color: inherit;
-  padding: 1rem;
-  border-radius: 0.875rem;
-  margin-bottom: 0.75rem;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 0.875rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.625rem;
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  overflow: hidden;
-}
-
-.resource-dropdown-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 255, 0.02), rgba(168, 85, 247, 0.02));
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .resource-dropdown-item:hover {
-  transform: translateY(-2px) scale(1.02);
-  background: rgba(255, 255, 255, 0.9);
-  border-color: rgba(0, 0, 255, 0.2);
-  box-shadow: 0 12px 40px rgba(0, 0, 255, 0.15),
-              0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  background: var(--bs-body-bg);
+  border-color: var(--bs-primary);
+  box-shadow: 0 0.5rem 1.5rem rgba(var(--bs-primary-rgb), 0.25);
   text-decoration: none;
   color: inherit;
-}
-
-.resource-dropdown-item:hover::before {
-  opacity: 1;
 }
 
 .resource-dropdown-item:hover .resource-arrow {
@@ -276,47 +237,35 @@
 
 /* ===== ICON WRAPPER ===== */
 .resource-icon-wrapper {
-  width: 3rem;
-  height: 3rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
   flex-shrink: 0;
-  background: linear-gradient(135deg, #0000FF, #a855f7);
-  box-shadow: 0 4px 16px rgba(0, 0, 255, 0.25);
   transition: all 0.3s ease;
 }
 
-.resource-icon-wrapper.docs {
-  background: linear-gradient(135deg, #3b82f6, #60a5fa);
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.25);
+.resource-icon-wrapper.news {
+  background: linear-gradient(135deg, #0d6efd, #6ea8fe);
+  box-shadow: 0 4px 16px rgba(13, 110, 253, 0.25);
 }
 
-.resource-icon-wrapper.case-studies {
-  background: linear-gradient(135deg, #10b981, #34d399);
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25);
+.resource-icon-wrapper.publications {
+  background: linear-gradient(135deg, #dc3545, #ea868f);
+  box-shadow: 0 4px 16px rgba(220, 53, 69, 0.25);
 }
 
-.resource-icon-wrapper.webinars {
-  background: linear-gradient(135deg, #f59e0b, #fbbf24);
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.25);
+.resource-icon-wrapper.gallery {
+  background: linear-gradient(135deg, #198754, #75b798);
+  box-shadow: 0 4px 16px rgba(25, 135, 84, 0.25);
 }
 
-.resource-icon-wrapper.whitepapers {
-  background: linear-gradient(135deg, #ef4444, #f87171);
-  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.25);
-}
-
-.resource-icon-wrapper.templates {
-  background: linear-gradient(135deg, #06b6d4, #67e8f9);
-  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.25);
-}
-
-.resource-icon-wrapper.tools {
-  background: linear-gradient(135deg, #6b7280, #9ca3af);
-  box-shadow: 0 4px 16px rgba(107, 114, 128, 0.25);
+.resource-icon-wrapper.events {
+  background: linear-gradient(135deg, #ffc107, #ffda6a);
+  box-shadow: 0 4px 16px rgba(255, 193, 7, 0.25);
 }
 
 .resource-icon-wrapper i {
@@ -334,15 +283,15 @@
 
 .resource-title {
   font-weight: 700;
-  font-size: 1rem;
-  color: #1f2937;
+  font-size: 0.9375rem;
+  color: var(--bs-body-color);
   margin-bottom: 0.25rem;
   line-height: 1.3;
   letter-spacing: -0.01em;
 }
 
 .resource-description {
-  color: #6b7280;
+  color: var(--bs-secondary-color);
   font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.4;
@@ -357,7 +306,7 @@
   opacity: 0;
   transform: translateX(-8px);
   transition: all 0.3s ease;
-  color: #0000FF;
+  color: var(--bs-primary);
   font-size: 1rem;
   margin-left: 0.75rem;
 }
@@ -366,7 +315,7 @@
 .support-section {
   margin-top: 1.5rem;
   padding-top: 1.25rem;
-  border-top: 2px solid rgba(0, 0, 255, 0.1);
+  border-top: 2px solid var(--bs-primary-border-subtle);
   position: relative;
 }
 
@@ -378,7 +327,7 @@
   transform: translateX(-50%);
   width: 40px;
   height: 2px;
-  background: linear-gradient(90deg, #0000FF, #a855f7);
+  background: var(--bs-primary);
   border-radius: 1px;
 }
 
@@ -388,7 +337,7 @@
 }
 
 .support-label {
-  color: #374151;
+  color: var(--bs-body-color);
   font-weight: 700;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -406,30 +355,29 @@
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
-  background: linear-gradient(135deg, rgba(0, 0, 255, 0.08), rgba(168, 85, 247, 0.08));
-  color: #0000FF;
+  background: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary);
   font-weight: 600;
-  font-size: 0.75rem;
-  padding: 0.5rem 0.875rem;
+  font-size: 0.8125rem;
+  padding: 0.5rem 1rem;
   border-radius: 2rem;
-  border: 1px solid rgba(0, 0, 255, 0.15);
+  border: 1px solid var(--bs-primary-border-subtle);
   transition: all 0.3s ease;
   text-decoration: none;
   white-space: nowrap;
 }
 
 .support-link:hover {
-  background: linear-gradient(135deg, rgba(0, 0, 255, 0.15), rgba(168, 85, 247, 0.15));
-  border-color: rgba(0, 0, 255, 0.3);
+  background: var(--bs-primary);
+  color: white;
+  border-color: var(--bs-primary);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(var(--bs-primary-rgb), 0.3);
   text-decoration: none;
-  color: #0000FF;
 }
 
 .support-link i {
   font-size: 0.875rem;
-  opacity: 0.8;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -437,35 +385,12 @@
   .resources-dropdown {
     min-width: auto !important;
     max-width: none !important;
-    width: calc(100vw - 2rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 100%;
     padding: 1.25rem;
-    right: auto !important;
-    left: 0 !important;
   }
 
   .row {
     flex-direction: column;
-  }
-
-  .resource-title {
-    font-size: 0.9375rem;
-  }
-
-  .resource-description {
-    font-size: 0.8rem;
-  }
-
-  .support-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .support-link {
-    width: 100%;
-    justify-content: center;
-    max-width: 200px;
   }
 }
 
@@ -475,7 +400,7 @@
   }
 
   .resource-dropdown-item {
-    padding: 0.875rem;
+    padding: 0.75rem;
   }
 
   .resource-icon-wrapper {
@@ -487,35 +412,14 @@
   .resource-icon-wrapper i {
     font-size: 1.125rem;
   }
-}
 
-/* ===== DARK MODE COMPATIBILITY ===== */
-@media (prefers-color-scheme: dark) {
-  .resources-dropdown {
-    background: rgba(26, 26, 26, 0.98) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
+  .support-links {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .dropdown-header-title,
-  .resource-title,
-  .resource-category-title,
-  .support-label {
-    color: #f9fafb;
-  }
-
-  .dropdown-header-subtitle,
-  .resource-description {
-    color: #d1d5db;
-  }
-
-  .resource-dropdown-item {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .resource-dropdown-item:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(0, 0, 255, 0.3);
+  .support-link {
+    justify-content: center;
   }
 }
 </style>

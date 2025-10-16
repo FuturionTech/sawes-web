@@ -2,7 +2,7 @@
   <div>
     <!-- FAQ -->
     <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5">
-      <div style="padding-top: 70px;">
+      <div class="page-header-spacing">
         <nav aria-label="breadcrumb">
         <ol class="pt-lg-3 breadcrumb">
           <li class="breadcrumb-item"><NuxtLink to="/">{{ $t('breadcrumbs.home') }}</NuxtLink></li>
@@ -110,5 +110,22 @@ const formatParams = (index) => {
   background-color: transparent !important; /* Rétablit la couleur normale */
   color: gray !important; /* Garde la couleur du texte */
   box-shadow: none !important; /* Supprime l'ombre */
+}
+
+/* Page header spacing - accounts for fixed navbar */
+.page-header-spacing {
+  padding-top: 72px;
+}
+
+@media (max-width: 991.98px) {
+  .page-header-spacing {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header-spacing {
+    padding-top: 60px;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="position-relative py-5 bg-gradient" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);">
+  <section class="position-relative py-5 bg-gradient page-header-spacing" style="background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);">
     <!-- Background pattern -->
     <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.1;">
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,15 @@
     </div>
 
     <div class="container position-relative">
-      <div class="row align-items-center py-5">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="pt-4 pb-2">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><NuxtLink to="/" class="text-white-50">{{ $t('breadcrumbs.home') }}</NuxtLink></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">{{ $t('breadcrumbs.partners') }}</li>
+        </ol>
+      </nav>
+
+      <div class="row align-items-center py-3">
         <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
           <!-- Badge -->
           <div class="badge bg-white bg-opacity-25 text-white fs-6 fw-normal px-4 py-2 mb-4">
@@ -86,5 +94,42 @@ const stats = {
 .bg-gradient {
   position: relative;
   overflow: hidden;
+}
+
+/* Breadcrumb styling for dark background */
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: white !important;
+}
+
+/* Page header spacing - accounts for fixed navbar */
+.page-header-spacing {
+  padding-top: 72px;
+}
+
+@media (max-width: 991.98px) {
+  .page-header-spacing {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header-spacing {
+    padding-top: 60px;
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="position-relative bg-dark text-white overflow-hidden py-5">
+    <section class="position-relative bg-dark text-white overflow-hidden py-5 page-header-spacing">
       <!-- Background overlay -->
       <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
 
@@ -11,7 +11,15 @@
       </div>
 
       <div class="container position-relative" style="z-index: 2;">
-        <div class="row align-items-center py-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="pt-4 pb-2">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><NuxtLink to="/" class="text-white-50">{{ $t('breadcrumbs.home') }}</NuxtLink></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">{{ $t('breadcrumbs.solutions') }}</li>
+          </ol>
+        </nav>
+
+        <div class="row align-items-center py-3">
           <div class="col-lg-7">
             <h1 class="display-2 fw-bold mb-4">Our Solutions</h1>
             <p class="fs-5 text-white-50 mb-4">
@@ -250,6 +258,43 @@ useHead({
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Breadcrumb styling for dark background */
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: white !important;
+}
+
+/* Page header spacing - accounts for fixed navbar */
+.page-header-spacing {
+  padding-top: 72px;
+}
+
+@media (max-width: 991.98px) {
+  .page-header-spacing {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header-spacing {
+    padding-top: 60px;
   }
 }
 </style>

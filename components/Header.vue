@@ -43,12 +43,8 @@
           <li class="nav-item">
             <NuxtLink class="nav-link" :to="partnersPath">{{ $t('header.partners') }}</NuxtLink>
           </li>
-          <li class="nav-item">
-            <NuxtLink class="nav-link" :to="resourcesPath">{{ $t('header.resources') }}</NuxtLink>
-          </li>
-          <li class="nav-item">
-            <NuxtLink class="nav-link" :to="careersPath">{{ $t('header.careers') }}</NuxtLink>
-          </li>
+          <!-- Resources Dropdown Menu -->
+          <RessourcesMenu />
         </ul>
         <div class="d-sm-none p-3 mt-n3">
           <!-- Language selector for mobile -->
@@ -69,6 +65,7 @@
 import LanguageSelector from "./selectors/LanguageSelector.vue";
 import ThemeToggle from "./selectors/ThemeToggle.vue";
 import HeaderLogo from "./logo/HeaderLogo.vue";
+import RessourcesMenu from "./menus/RessourcesMenu.vue";
 
 const { t, locale } = useI18n()
 const { isScrolled, isMenuOpen, toggleMenu, closeMenu } = useNavbar()
@@ -83,8 +80,6 @@ const localePath = (path) => {
 // Computed paths for bilingual routes
 const projectsPath = computed(() => locale.value === 'en' ? '/en/projects' : '/projets')
 const partnersPath = computed(() => locale.value === 'en' ? '/en/partners' : '/partenaires')
-const resourcesPath = computed(() => locale.value === 'en' ? '/en/resources' : '/ressources')
-const careersPath = computed(() => locale.value === 'en' ? '/en/careers' : '/carrieres')
 const contactPath = computed(() => locale.value === 'en' ? '/en/contact' : '/contact')
 
 // Watch for route changes to close menu
