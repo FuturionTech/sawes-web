@@ -1,0 +1,827 @@
+{
+  "header": {
+    "about": "À Propos",
+    "expertise": "Expertises",
+    "services": "Services",
+    "projects": "Projets",
+    "partners": "Partenaires",
+    "resources": "Ressources",
+    "home": "Accueil",
+    "contact_us": "Contact",
+    "careers": "Carrières",
+    "get_started": "Découvrir",
+    "faq": "FAQ"
+  },
+  "homepage": {
+    "hero": {
+      "badge": "Expertise en Eau, Assainissement & Environnement",
+      "title": "Promouvoir la Qualité de la Vie",
+      "highlight": "Eau, Assainissement & Environnement",
+      "subtitle": "Apporter les compétences et l'innovation aux acteurs de l'eau pour réussir l'amélioration de la qualité de la vie et la recherche d'un monde meilleur pour les générations futures.",
+      "cta_primary": "Contactez-Nous",
+      "cta_secondary": "Nos Expertises",
+      "trust_text": "Partenaire de confiance depuis 2000",
+      "years_experience": "25+ Ans d'Expérience",
+      "regional_expertise": "Expertise Régionale",
+      "international_partners": "Partenaires Internationaux",
+      "stats_projects": "Projets",
+      "stats_regions": "Régions",
+      "stats_partners": "Partenaires"
+    },
+    "banner": {
+      "title": "SAWES",
+      "subtitle": "Sahelian Agency for Water, Environment and Sanitation",
+      "slogan": "Promouvoir la qualité de la vie dans les domaines de l'eau, de l'assainissement et de l'environnement",
+      "cta": "Découvrir nos domaines d'expertise",
+      "feature1": "Excellence et innovation depuis 2000",
+      "feature2": "Partenaire de confiance pour le développement durable"
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Promouvoir la qualité de la vie dans les domaines de l'eau, de l'assainissement et de l'environnement."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Apporter les compétences et l'innovation aux acteurs de l'eau, de l'environnement et de l'assainissement pour réussir l'amélioration de la qualité de la vie et la recherche d'un monde meilleur pour les générations futures."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "value1": {
+        "title": "Excellence",
+        "description": "Toujours bien faire le travail en cours et le terminer dans les délais convenus."
+      },
+      "value2": {
+        "title": "Innovation",
+        "description": "Agir en pionnier de l'innovation dans les domaines d'expertise."
+      },
+      "value3": {
+        "title": "Réputation",
+        "description": "Excellente réputation auprès des partenaires nationaux et internationaux."
+      }
+    },
+    "stats": {
+      "years": "25+",
+      "years_label": "Années d'Expérience",
+      "projects": "30+",
+      "projects_label": "Projets Majeurs Réalisés",
+      "regions": "7+",
+      "regions_label": "Régions Couvertes",
+      "partners": "15+",
+      "partners_label": "Organisations Partenaires"
+    },
+    "services": {
+      "title": "Nos Services",
+      "subtitle": "Nous offrons une gamme complète de services de conseil",
+      "environmental": {
+        "title": "Évaluation Environnementale",
+        "description": "Études d'impact environnemental complètes et évaluations de durabilité pour les projets d'eau et d'assainissement."
+      }
+    },
+    "expertise": {
+      "title": "Domaines d'Expertise",
+      "subtitle": "Des solutions complètes adaptées à vos besoins"
+    },
+    "projects": {
+      "title": "Projets Phares",
+      "subtitle": "Découvrez nos réalisations et notre expertise terrain",
+      "view_all": "Voir tous les projets"
+    },
+    "industries": {
+      "title": "Secteurs d'activité",
+      "subtitle": "Nous aidons les organisations dans les secteurs suivants depuis plus de deux décennies",
+      "water": {
+        "title": "Gestion de l'Eau",
+        "item1": "Systèmes d'approvisionnement en eau",
+        "item2": "Installations de traitement d'eau",
+        "item3": "Planification des ressources en eau"
+      },
+      "sanitation": {
+        "title": "Assainissement & Hygiène",
+        "item1": "Infrastructure d'assainissement",
+        "item2": "Programmes de promotion de l'hygiène",
+        "item3": "Systèmes de gestion des déchets"
+      },
+      "environment": {
+        "title": "Solutions Environnementales",
+        "item1": "Évaluations environnementales",
+        "item2": "Stratégies d'adaptation climatique",
+        "item3": "Développement durable"
+      },
+      "see_all": "Voir tous les secteurs"
+    },
+    "clients": {
+      "title": "Nos clients",
+      "subtitle": "Plus de 500 organisations font confiance à SAWES pour leurs projets d'eau, d'assainissement et d'environnement"
+    },
+    "testimonials": {
+      "title": "Témoignages",
+      "testimonial1": {
+        "name": "UNICEF Burkina Faso",
+        "position": "Organisation Internationale",
+        "text": "SAWES a été un partenaire inestimable dans nos programmes d'eau et d'assainissement, livrant des résultats exceptionnels dans plusieurs régions."
+      },
+      "testimonial2": {
+        "name": "Agence Française de Développement",
+        "position": "Agence de Développement",
+        "text": "Leur expertise dans le développement d'infrastructures hydrauliques et le renforcement des capacités a considérablement contribué à nos objectifs de développement."
+      },
+      "testimonial3": {
+        "name": "Banque Africaine de Développement",
+        "position": "Institution Financière",
+        "text": "SAWES démontre un professionnalisme remarquable et une excellence technique dans toutes leurs implémentations de projets."
+      },
+      "testimonial4": {
+        "name": "CEDEAO",
+        "position": "Organisation Régionale",
+        "text": "Leur expertise régionale et leurs approches innovantes ont été cruciales pour nos initiatives de gestion des ressources en eau."
+      },
+      "testimonial5": {
+        "name": "Union Européenne",
+        "position": "Organisation Internationale",
+        "text": "SAWES livre constamment des études techniques et des services de gestion de projet de haute qualité qui dépassent les attentes."
+      },
+      "testimonial6": {
+        "name": "ONEA",
+        "position": "Société Nationale d'Eau",
+        "text": "Leur soutien dans la gestion des services d'eau urbains a été instrumental dans l'amélioration de la prestation de services à nos clients."
+      },
+      "testimonial7": {
+        "name": "Gouvernement du Burkina Faso",
+        "position": "Institution Gouvernementale",
+        "text": "SAWES a été un partenaire de confiance dans la mise en œuvre des politiques et programmes nationaux d'eau et d'assainissement."
+      },
+      "testimonial8": {
+        "name": "CODEX",
+        "position": "Cabinet d'Ingénierie",
+        "text": "Leur expertise technique et leur approche collaborative en font un excellent partenaire pour les projets d'infrastructure complexes."
+      }
+    },
+    "case_studies": {
+      "title": "Études de cas récentes",
+      "case1": {
+        "title": "Développement d'Infrastructures Hydrauliques",
+        "description": "Développement complet de systèmes d'approvisionnement en eau dans plusieurs régions, incluant études de faisabilité, conception et soutien à l'implémentation pour un accès durable à l'eau."
+      },
+      "case2": {
+        "title": "Implémentation de Programme d'Assainissement",
+        "description": "Programme à grande échelle d'assainissement et de promotion de l'hygiène dans les communautés rurales, avec des approches innovantes de changement de comportement et de développement d'infrastructures."
+      },
+      "read_case_study": "Lire l'étude de cas",
+      "read_all": "Lire toutes les études de cas"
+    },
+    "cta": {
+      "title": "Prêt à améliorer l'eau, l'assainissement et l'environnement dans votre région ?",
+      "description": "Partenaire avec SAWES pour développer des solutions durables aux défis de l'eau, de l'assainissement et de l'environnement. Notre équipe d'experts est prête à soutenir vos projets avec des approches innovantes et des méthodologies éprouvées.",
+      "cta_button": "Contactez-Nous"
+    },
+    "partners": {
+      "title": "Nos Partenaires",
+      "subtitle": "Collaborations stratégiques pour un impact durable"
+    },
+    "contact": {
+      "title": "Travaillons Ensemble",
+      "description": "Nous sommes toujours à la recherche de nouvelles opportunités de collaboration. Contactez-nous pour discuter de vos projets dans les domaines de l'eau, de l'assainissement et de l'environnement.",
+      "cta": "Contactez-Nous",
+      "ready": "Prêt à démarrer votre projet?",
+      "message": "Notre équipe d'experts est à votre disposition pour vous accompagner.",
+      "contact_us": "Prenez Contact"
+    }
+  },
+  "about": {
+    "title": "À Propos de SAWES",
+    "presentation": {
+      "title": "Présentation",
+      "description": "SAWES est une société fondée en 2000. Elle est spécialisée dans les domaines de l'eau, de l'assainissement, de l'environnement, de la gestion des services et de la représentation."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Promouvoir la qualité de la vie dans les domaines de l'eau, de l'assainissement et de l'environnement."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Apporter les compétences et l'innovation aux acteurs de l'eau, de l'environnement et de l'assainissement pour réussir l'amélioration de la qualité de la vie et la recherche d'un monde meilleur pour les générations futures."
+    },
+    "values": {
+      "title": "Valeurs Fondamentales",
+      "value1": {
+        "code": "A1",
+        "title": "Excellence",
+        "description": "Toujours bien faire le travail en cours et le terminer dans les délais convenus."
+      },
+      "value2": {
+        "code": "A2",
+        "title": "Innovation",
+        "description": "Agir en pionnier de l'innovation dans les domaines d'expertise."
+      },
+      "value3": {
+        "code": "A3",
+        "title": "Réputation",
+        "description": "Excellente réputation auprès des partenaires nationaux et internationaux."
+      }
+    },
+    "team": {
+      "title": "Équipe et Organigramme",
+      "direction": "Direction Société",
+      "administrative": "Service Administratif et Financier",
+      "commercial": "Service Commercial",
+      "operations_south": "Responsables des opérations – Régions Centre-Sud, Centre-Est, Plateau Central",
+      "operations_center": "Responsables des opérations – Régions Centre, Centre-Ouest",
+      "data": "Équipes de saisie et de traitement des données"
+    },
+    "company": {
+      "title": "Informations Pratiques",
+      "name": "SAWES",
+      "full_name": "Sahelian Agency for Water, Environment and Sanitation",
+      "location": "Ouagadougou, Burkina Faso",
+      "founded": "2000",
+      "slogan": "Promouvoir la qualité de la vie dans les domaines de l'eau, de l'assainissement et de l'environnement"
+    }
+  },
+  "expertise": {
+    "title": "Domaines d'Expertise",
+    "subtitle": "Des solutions complètes pour l'eau, l'assainissement et l'environnement",
+    "planning": {
+      "title": "Planification stratégique et opérationnelle",
+      "description": "Gérer efficacement les ressources en eau et promouvoir des aménagements adaptés aux besoins des secteurs de l'économie nationale en pleine mutation.",
+      "activities": [
+        "Plans et stratégies de développement",
+        "Évaluation des projets et programmes de développement"
+      ]
+    },
+    "studies": {
+      "title": "Études techniques et financières des investissements",
+      "description": "La réalisation d'investissements de qualité participe à l'amélioration de la qualité de vie.",
+      "activities": [
+        "Évaluation des besoins des clients et des usagers",
+        "Études de faisabilité des projets",
+        "Élaboration de scénarios d'aménagement",
+        "Conception des aménagements retenus",
+        "Évaluation financière des investissements"
+      ]
+    },
+    "training": {
+      "title": "Formation et sensibilisation",
+      "description": "Promouvoir l'assainissement et l'hygiène du milieu pour contribuer au bien-être collectif.",
+      "activities": [
+        "Études diagnostiques des besoins de formation",
+        "Conception de programmes de formation",
+        "Réalisation de sessions de formation"
+      ]
+    },
+    "management": {
+      "title": "Gestion et développement de services urbains",
+      "description": "SAWES accompagne les collectivités dans la gestion durable des services d'eau et d'assainissement.",
+      "activities": [
+        "Administration des services d'eau en milieu rural",
+        "Conseil aux maîtres d'ouvrage",
+        "Établissement de plans d'extension des services"
+      ]
+    },
+    "works": {
+      "title": "Travaux d'eau potable",
+      "description": "Réalisation de travaux d'infrastructure pour l'accès à l'eau potable.",
+      "activities": [
+        "Fourniture et pose de systèmes de pompage",
+        "Extension des systèmes existants",
+        "Maintenance et réparation des installations"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projets et Réalisations",
+    "subtitle": "Découvrez nos études, évaluations et réalisations terrain",
+    "filter": {
+      "all": "Tous",
+      "studies": "Études",
+      "evaluations": "Évaluations",
+      "management": "Gestion de projets",
+      "urban_services": "Services urbains"
+    },
+    "studies": {
+      "title": "Études",
+      "cedeao_2012": {
+        "title": "Plan d'action de mise en œuvre de la politique des ressources en eau de l'Afrique de l'Ouest",
+        "date": "Mai 2012",
+        "description": "Concertation régionale pour la coordination et l'harmonisation des actions dans le secteur de l'eau",
+        "partners": "Centre de coordination des ressources en eau (CCRE-CEDEAO)"
+      },
+      "pnaepa_2006": {
+        "title": "Programme national d'approvisionnement en eau potable et d'assainissement",
+        "date": "Octobre 2006",
+        "description": "Diagnostic et plan d'investissement 2006–2015 selon les OMD",
+        "partners": "Bureau EDE – Sénégal, Banque africaine de développement (BAD)"
+      },
+      "liriba_2003": {
+        "title": "Étude de barrage et d'aménagement hydroagricole de Liriba",
+        "date": "2003",
+        "description": "Conception du barrage et aménagement du périmètre irrigué (Poni)",
+        "partners": "État du Burkina Faso"
+      },
+      "dadoune_2003": {
+        "title": "Étude de barrage et d'aménagement hydroagricole de Dadouné",
+        "date": "2003",
+        "description": "Conception du barrage et aménagement du périmètre irrigué (Ioba)",
+        "partners": "État du Burkina Faso"
+      },
+      "unicef_2007": {
+        "title": "Approches d'interventions en matière d'eau potable, d'assainissement et d'éducation à l'hygiène en milieu scolaire",
+        "date": "Mai 2007",
+        "description": "Capitalisation et harmonisation des approches",
+        "partners": "UNICEF Burkina Faso"
+      },
+      "small_towns_2008": {
+        "title": "Stratégies régionales d'appui aux petites villes",
+        "date": "2008–2009",
+        "description": "Recherche-action : Évaluation des besoins en financement et formation",
+        "partners": "Programme Solidarité Eau / PDM France"
+      },
+      "basins_2010": {
+        "title": "Promotion des organisations de bassins transfrontaliers",
+        "date": "2010",
+        "description": "Définition juridique et organisationnelle des bassins",
+        "partners": "CCRE / CEDEAO"
+      }
+    },
+    "evaluations": {
+      "title": "Évaluations de projets et programmes",
+      "bagre_2009": {
+        "title": "Projet de mise en sécurité du barrage de Bagré",
+        "date": "2009",
+        "description": "Évaluation rétrospective",
+        "partners": "AFD"
+      },
+      "school_2009": {
+        "title": "Projet d'hydraulique scolaire",
+        "date": "2009",
+        "description": "Analyse d'efficacité, impact et viabilité",
+        "partners": "AFD"
+      },
+      "eco_sanitation_2009": {
+        "title": "Projet d'assainissement écologique à Ouagadougou",
+        "date": "2009",
+        "description": "Évaluation à mi-parcours",
+        "partners": "CREPA"
+      }
+    },
+    "management": {
+      "title": "Gestion de projet et programme",
+      "vreo": {
+        "title": "Programme de valorisation des ressources en eau de l'Ouest (VREO)",
+        "date": "2004–2010",
+        "description": "Assistance technique à la maîtrise d'œuvre déléguée",
+        "partners": "SOFRECO France / UE-FED"
+      },
+      "yakouta": {
+        "title": "Contrôle et surveillance du barrage de Yakouta",
+        "date": "2003–2008",
+        "partners": "République de Chine (Taïwan)"
+      },
+      "soum": {
+        "title": "Suivi et contrôle du barrage de Soum",
+        "date": "2005–2007",
+        "partners": "BID / Koweït / Burkina Faso"
+      },
+      "bobo": {
+        "title": "Ingénierie sociale et marketing pour les ouvrages d'assainissement à Bobo-Dioulasso",
+        "date": "2013–2015",
+        "partners": "ONEA / CODEX Burkina Faso"
+      },
+      "forages_1000": {
+        "title": "Suivi de 1000 forages positifs",
+        "date": "2004–2008",
+        "partners": "BAFRENAH Burkina Faso / Taïwan"
+      },
+      "forages_100": {
+        "title": "Maîtrise d'œuvre technique pour 100 forages positifs (Centre-Sud)",
+        "partners": "SEROHS Mali / UEMOA"
+      }
+    },
+    "urban_services": {
+      "title": "Gestion et développement de services urbains",
+      "contract_2021": {
+        "title": "Contrats de gestion des adductions d'eau potable",
+        "date": "2021–2025",
+        "description": "Maintenance et entretien des installations, rapports techniques et financiers, propositions d'amélioration et travaux d'extension"
+      }
+    },
+    "other_achievements": {
+      "title": "Autres réalisations",
+      "items": [
+        "Fourniture et pose d'un générateur photovoltaïque (19 panneaux – 270 V)",
+        "Travaux de réparation de conduites d'eau",
+        "Fourniture et pose de compteurs d'eau",
+        "Fourniture et pose de pompes immergées"
+      ]
+    }
+  },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Collaborations stratégiques pour un développement durable",
+    "hero": {
+      "badge": "Partenariats de Confiance"
+    },
+    "stats": {
+      "partners": "Partenaires",
+      "countries": "Pays",
+      "years": "Années",
+      "projects": "Projets Conjoints"
+    },
+    "introduction": {
+      "text": "Depuis plus de 25 ans, SAWES a construit des partenariats solides avec des organisations internationales, des agences bilatérales, des gouvernements, le secteur privé et la société civile. Ces collaborations stratégiques nous permettent de réaliser des projets à fort impact qui améliorent la qualité de vie des communautés en Afrique de l'Ouest."
+    },
+    "categories": {
+      "international": "Organisations Internationales",
+      "bilateral": "Coopération Bilatérale",
+      "ngo": "ONG & Société Civile",
+      "private": "Secteur Privé",
+      "government": "Gouvernement & Institutions Publiques",
+      "academic": "Académique & Recherche"
+    },
+    "grid": {
+      "title": "Notre Réseau de Partenaires",
+      "subtitle": "Explorez nos partenariats diversifiés à travers les secteurs et les régions",
+      "search_placeholder": "Rechercher un partenaire...",
+      "no_results": "Aucun partenaire trouvé",
+      "no_results_message": "Essayez d'ajuster vos critères de recherche ou de filtre",
+      "reset_filters": "Réinitialiser les Filtres",
+      "featured_title": "Partenaires Vedettes",
+      "featured_subtitle": "Nos partenariats stratégiques clés"
+    },
+    "card": {
+      "since": "Depuis",
+      "projects": "projets",
+      "website": "Visiter le Site"
+    },
+    "timeline": {
+      "title": "Chronologie des Partenariats",
+      "subtitle": "Les étapes clés de notre parcours collaboratif"
+    },
+    "testimonials": {
+      "title": "Histoires de Succès",
+      "subtitle": "Impact réel à travers le partenariat et la collaboration",
+      "partner": "Partenaire",
+      "impact": {
+        "beneficiaries": "Bénéficiaires Atteints",
+        "projects": "Projets Réussis",
+        "partners": "Partenaires Actifs",
+        "years": "Années de Collaboration"
+      }
+    },
+    "cta": {
+      "visual_title": "Partenariat avec Nous",
+      "badge": "Opportunités de Partenariat",
+      "title": "Devenez Partenaire",
+      "description": "Rejoignez SAWES dans notre mission de promouvoir la qualité de vie à travers des solutions durables en eau, assainissement et environnement. Ensemble, nous pouvons créer un impact durable.",
+      "benefits": {
+        "title": "Avantages du Partenariat",
+        "benefit1": "Accès à l'expertise régionale et aux connaissances locales",
+        "benefit2": "Bilan éprouvé dans la réalisation de projets",
+        "benefit3": "Relations solides avec les gouvernements et les communautés",
+        "benefit4": "Engagement envers le développement durable et l'innovation"
+      },
+      "button_primary": "Contactez-Nous",
+      "button_secondary": "Télécharger la Brochure",
+      "download_message": "La brochure de partenariat sera bientôt disponible",
+      "contact": {
+        "email_label": "Email",
+        "phone_label": "Téléphone"
+      }
+    },
+    "map": {
+      "title": "Portée Mondiale",
+      "subtitle": "Nos partenaires s'étendent sur tous les continents, apportant des perspectives et des ressources diverses",
+      "placeholder_title": "Distribution Géographique des Partenaires",
+      "placeholder_text": "Carte interactive montrant les emplacements des partenaires bientôt disponible",
+      "countries": "Pays",
+      "continents": "Continents",
+      "organizations": "Organisations"
+    },
+    "trust": {
+      "title": "Pourquoi s'Associer à SAWES ?",
+      "description": "Notre succès repose sur la confiance, l'expertise et un engagement commun envers le développement durable.",
+      "point1_title": "Excellence Prouvée",
+      "point1_text": "Plus de 25 ans à réaliser des projets de qualité en Afrique de l'Ouest",
+      "point2_title": "Impact Durable",
+      "point2_text": "Plus de 100 000 bénéficiaires atteints grâce à nos projets",
+      "point3_title": "Réseaux Solides",
+      "point3_text": "Relations établies avec toutes les parties prenantes majeures",
+      "point4_title": "Focus Innovation",
+      "point4_text": "Pionnier de nouvelles approches pour les défis de l'eau et de l'assainissement",
+      "stat1": "Années d'Excellence",
+      "stat2": "Satisfaction des Partenaires",
+      "stat3": "Pays Servis",
+      "stat4": "Renouvellement de Partenariat"
+    },
+    "international": {
+      "title": "Partenaires Internationaux",
+      "afd": {
+        "name": "AFD",
+        "full_name": "Agence Française de Développement",
+        "description": "Partenaire financier et technique pour les projets de développement"
+      },
+      "bad": {
+        "name": "BAD",
+        "full_name": "Banque Africaine de Développement",
+        "description": "Soutien financier pour les programmes d'eau et d'assainissement"
+      },
+      "cedeao": {
+        "name": "CEDEAO",
+        "full_name": "Communauté Économique des États de l'Afrique de l'Ouest",
+        "description": "Coordination régionale pour les ressources en eau"
+      },
+      "unicef": {
+        "name": "UNICEF",
+        "description": "Partenaire pour les projets d'eau et d'hygiène en milieu scolaire"
+      },
+      "ue": {
+        "name": "UE-FED",
+        "full_name": "Union Européenne - Fonds Européen de Développement",
+        "description": "Financement de programmes de développement"
+      }
+    },
+    "national": {
+      "title": "Partenaires Nationaux",
+      "onea": {
+        "name": "ONEA",
+        "full_name": "Office National de l'Eau et de l'Assainissement",
+        "description": "Collaboration pour la gestion des services urbains d'eau"
+      },
+      "burkina": {
+        "name": "État du Burkina Faso",
+        "description": "Partenaire institutionnel pour les projets d'infrastructure"
+      }
+    }
+  },
+  "resources": {
+    "title": "Actualités & Ressources",
+    "subtitle": "Restez informé de nos activités, réalisations et innovations",
+    "hero": {
+      "title": "Centre de Ressources",
+      "subtitle": "Accédez à nos publications, actualités, galerie photos et événements à venir"
+    },
+    "sections": {
+      "news": "Dernières Actualités",
+      "publications": "Publications",
+      "gallery": "Galerie Photos",
+      "events": "Événements & Ateliers"
+    },
+    "news": {
+      "title": "Actualités & Nouvelles",
+      "subtitle": "Restez informé de nos dernières réalisations et activités",
+      "featured": "Actualités à la Une",
+      "recent": "Actualités Récentes",
+      "all_news": "Toutes les Actualités",
+      "read_more": "Lire la Suite",
+      "back_to_news": "Retour aux Actualités",
+      "share": "Partager",
+      "related_news": "Actualités Connexes",
+      "no_news": "Aucune actualité disponible pour le moment.",
+      "categories": {
+        "all": "Toutes les Catégories",
+        "water": "Eau",
+        "sanitation": "Assainissement",
+        "environment": "Environnement",
+        "partnerships": "Partenariats",
+        "training": "Formation",
+        "innovation": "Innovation",
+        "events": "Événements"
+      },
+      "types": {
+        "news": "Actualité",
+        "press-release": "Communiqué de Presse",
+        "announcement": "Annonce",
+        "event-coverage": "Couverture d'Événement"
+      }
+    },
+    "publications": {
+      "title": "Bibliothèque de Publications",
+      "subtitle": "Accédez à nos rapports techniques, études de cas, guides et plus encore",
+      "recent": "Publications Récentes",
+      "all_publications": "Toutes les Publications",
+      "download": "Télécharger",
+      "preview": "Aperçu",
+      "view_details": "Voir les Détails",
+      "file_size": "Taille du Fichier",
+      "language": "Langue",
+      "year": "Année",
+      "downloads": "téléchargements",
+      "no_publications": "Aucune publication disponible pour le moment.",
+      "search_placeholder": "Rechercher des publications...",
+      "filter_by": "Filtrer par",
+      "sort_by": "Trier par",
+      "types": {
+        "all": "Tous les Types",
+        "technical-report": "Rapport Technique",
+        "case-study": "Étude de Cas",
+        "policy-brief": "Note de Politique",
+        "training-material": "Matériel de Formation",
+        "annual-report": "Rapport Annuel",
+        "guideline": "Guide"
+      },
+      "categories": {
+        "all": "Toutes les Catégories",
+        "water": "Eau",
+        "sanitation": "Assainissement",
+        "environment": "Environnement",
+        "planning": "Planification",
+        "infrastructure": "Infrastructure",
+        "capacity-building": "Renforcement des Capacités",
+        "evaluation": "Évaluation",
+        "policy": "Politique"
+      },
+      "sort": {
+        "recent": "Plus Récent",
+        "oldest": "Plus Ancien",
+        "popular": "Plus Téléchargé",
+        "title": "Titre A-Z"
+      }
+    },
+    "gallery": {
+      "title": "Galerie Photos",
+      "subtitle": "Découvrez nos projets et activités en images",
+      "recent": "Photos Récentes",
+      "all_photos": "Toutes les Photos",
+      "view_photo": "Voir la Photo",
+      "close": "Fermer",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "no_images": "Aucune image disponible pour le moment.",
+      "categories": {
+        "all": "Toutes les Catégories",
+        "infrastructure": "Infrastructure",
+        "training": "Formation & Renforcement des Capacités",
+        "community": "Engagement Communautaire",
+        "events": "Événements",
+        "team": "Notre Équipe",
+        "technology": "Technologie & Innovation"
+      }
+    },
+    "events": {
+      "title": "Événements & Ateliers",
+      "subtitle": "Participez à nos événements et sessions de formation à venir",
+      "upcoming": "Événements à Venir",
+      "past": "Événements Passés",
+      "all_events": "Tous les Événements",
+      "register": "S'inscrire",
+      "learn_more": "En Savoir Plus",
+      "date": "Date",
+      "location": "Lieu",
+      "organizer": "Organisateur",
+      "participants": "Participants",
+      "contact": "Contact",
+      "no_events": "Aucun événement prévu pour le moment.",
+      "status": {
+        "upcoming": "À Venir",
+        "ongoing": "En Cours",
+        "completed": "Terminé"
+      },
+      "types": {
+        "all": "Tous les Types",
+        "workshop": "Atelier",
+        "training": "Formation",
+        "conference": "Conférence",
+        "seminar": "Séminaire",
+        "celebration": "Célébration",
+        "field-visit": "Visite de Terrain"
+      }
+    },
+    "cta": {
+      "explore": "Explorer les Ressources",
+      "view_all": "Voir Tout",
+      "subscribe": "S'abonner à la Newsletter",
+      "contact_us": "Contactez-Nous"
+    }
+  },
+  "careers": {
+    "title": "Rejoignez Notre Équipe",
+    "subtitle": "Construire l'avenir de l'eau et de l'assainissement ensemble",
+    "why_join": {
+      "title": "Pourquoi rejoindre SAWES ?",
+      "reason1": "Participer à des projets d'impact pour le développement durable",
+      "reason2": "Travailler avec des experts reconnus dans le domaine",
+      "reason3": "Développer vos compétences avec nos partenaires internationaux",
+      "reason4": "Contribuer à l'amélioration de la qualité de vie des populations"
+    },
+    "openings": {
+      "title": "Postes Ouverts",
+      "coming_soon": "Aucune offre actuellement. Consultez régulièrement cette page."
+    },
+    "apply": {
+      "title": "Candidature Spontanée",
+      "description": "Vous êtes passionné par l'eau, l'assainissement et l'environnement ? Envoyez-nous votre candidature spontanée.",
+      "cta": "Postuler"
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous serions ravis d'échanger avec vous sur vos projets",
+    "form": {
+      "first_name": "Prénom",
+      "first_name_placeholder": "Entrez votre prénom",
+      "last_name": "Nom",
+      "last_name_placeholder": "Entrez votre nom",
+      "email": "Email",
+      "email_placeholder": "Entrez votre email",
+      "phone": "Téléphone",
+      "phone_placeholder": "Entrez votre numéro",
+      "company": "Organisation",
+      "company_placeholder": "Entrez le nom de votre organisation",
+      "subject": "Sujet",
+      "subject_placeholder": "Objet de votre message",
+      "message": "Message",
+      "message_placeholder": "Parlez-nous de votre projet",
+      "send": "Envoyer le message",
+      "sending_title": "Envoi en cours...",
+      "sending_message": "Votre message est en cours d'envoi.",
+      "success_title": "Succès !",
+      "success_message": "Merci pour votre message. Nous vous répondrons dans les plus brefs délais.",
+      "error_title": "Erreur !",
+      "error_message": "Échec de l'envoi du message. Veuillez réessayer.",
+      "retry": "Réessayer"
+    },
+    "info": {
+      "address_title": "Adresse",
+      "address_text": "10 BP 13346 Ouagadougou 10 – Burkina Faso",
+      "get_directions": "Obtenir l'itinéraire",
+      "phone_title": "Téléphone / Fax",
+      "phone_text": "(+226) 25 41 15 56 / 65 50 16 16",
+      "email_title": "Email",
+      "email_text": "sawes.bf@gmail.com",
+      "website_title": "Site Web",
+      "website_text": "SAWES.bf",
+      "schedule_title": "Horaires de bureau",
+      "schedule_text": "7h30 – 16h30"
+    }
+  },
+  "footer": {
+    "description": "SAWES est une société spécialisée dans l'eau, l'assainissement et l'environnement au Burkina Faso depuis 2000. Nous fournissons des solutions complètes pour le développement durable.",
+    "company": "SAWES",
+    "full_name": "Sahelian Agency for Water, Environment and Sanitation",
+    "address": "10 BP 13346 Ouagadougou 10 – Burkina Faso",
+    "slogan": "Promouvoir la qualité de la vie dans les domaines de l'eau, de l'assainissement et de l'environnement",
+    "expertise": "Expertises",
+    "about": "À Propos",
+    "projects": "Projets",
+    "partners": "Partenaires",
+    "careers": "Carrières",
+    "contact": "Contact",
+    "resources": "Ressources",
+    "privacy_policy": "Politique de Confidentialité",
+    "rights_reserved": "© 2025 SAWES. Tous droits réservés.",
+    "quick_links": "Liens Rapides",
+    "follow_us": "Suivez-Nous"
+  },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "expertise": "Expertises",
+    "projects": "Projets",
+    "partners": "Partenaires",
+    "resources": "Ressources",
+    "contact": "Contact",
+    "careers": "Carrières",
+    "privacy_policy": "Politique de Confidentialité"
+  },
+  "meta": {
+    "home": {
+      "title": "SAWES - Sahelian Agency for Water, Environment and Sanitation",
+      "description": "SAWES, société spécialisée dans l'eau, l'assainissement et l'environnement au Burkina Faso depuis 2000. Expertise en planification, études techniques, formation et gestion de services urbains.",
+      "keywords": "SAWES, eau, assainissement, environnement, Burkina Faso, Ouagadougou, hydraulique, ONEA, AFD, CEDEAO"
+    },
+    "about": {
+      "title": "À Propos - SAWES",
+      "description": "Découvrez SAWES, agence sahélienne pour l'eau, l'environnement et l'assainissement fondée en 2000. Notre mission, vision et valeurs.",
+      "keywords": "SAWES, à propos, mission, vision, valeurs, Burkina Faso, eau, assainissement"
+    },
+    "expertise": {
+      "title": "Nos Expertises - SAWES",
+      "description": "Planification stratégique, études techniques, formation, gestion de services urbains et travaux d'eau potable. Découvrez nos domaines d'expertise.",
+      "keywords": "expertise eau, assainissement, planification, études techniques, formation, services urbains, travaux hydrauliques"
+    },
+    "projects": {
+      "title": "Projets et Réalisations - SAWES",
+      "description": "Découvrez nos projets, études et évaluations dans les domaines de l'eau, de l'assainissement et de l'environnement au Burkina Faso et en Afrique de l'Ouest.",
+      "keywords": "projets eau, études hydrauliques, barrages, forages, assainissement, CEDEAO, AFD, ONEA"
+    },
+    "partners": {
+      "title": "Nos Partenaires - SAWES",
+      "description": "Collaborations stratégiques avec AFD, BAD, CEDEAO, ONEA, UNICEF et autres partenaires nationaux et internationaux.",
+      "keywords": "partenaires, AFD, BAD, CEDEAO, ONEA, UNICEF, collaboration, développement"
+    },
+    "contact": {
+      "title": "Contact - SAWES",
+      "description": "Contactez SAWES à Ouagadougou, Burkina Faso. Téléphone: (+226) 25 41 15 56 / 65 50 16 16. Email: sawes.bf@gmail.com",
+      "keywords": "contact SAWES, Ouagadougou, Burkina Faso, téléphone, email, adresse"
+    },
+    "careers": {
+      "title": "Carrières - SAWES",
+      "description": "Rejoignez l'équipe SAWES et contribuez au développement durable dans les domaines de l'eau, de l'assainissement et de l'environnement.",
+      "keywords": "carrières, emploi, recrutement, SAWES, eau, assainissement, environnement"
+    },
+    "resources": {
+      "title": "Actualités & Ressources - SAWES",
+      "description": "Accédez aux publications SAWES, dernières actualités, galerie photos et événements à venir. Rapports techniques, études de cas, matériel de formation et plus encore.",
+      "keywords": "SAWES ressources, publications, actualités, rapports eau, études assainissement, galerie photos, événements, ateliers"
+    }
+  }
+}
