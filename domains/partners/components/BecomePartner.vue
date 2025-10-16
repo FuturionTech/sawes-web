@@ -1,13 +1,13 @@
 <template>
-  <section class="py-5 bg-white">
+  <section class="py-5 bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <div class="card border-0 shadow-lg overflow-hidden" data-aos="zoom-in">
+          <div class="card border-0 shadow-lg overflow-hidden rounded-4" data-aos="zoom-in">
             <div class="row g-0">
               <!-- Image Column -->
               <div class="col-lg-5 position-relative">
-                <div class="h-100 bg-gradient position-relative" style="background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%); min-height: 400px;">
+                <div class="h-100 bg-gradient position-relative d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%); min-height: 400px;">
                   <!-- Pattern Overlay -->
                   <div class="position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.1;">
                     <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -165,12 +165,13 @@ const downloadBrochure = () => {
   color: white;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-circle:hover {
-  transform: scale(1.1);
+  transform: scale(1.15) rotate(5deg);
   background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .icon-sm {
@@ -181,8 +182,63 @@ const downloadBrochure = () => {
   justify-content: center;
 }
 
+.btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.4);
+}
+
+.btn-outline-primary:hover {
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
+}
+
+/* Card Animation */
+.card {
+  transition: all 0.3s ease;
+}
+
+/* Dark mode support */
+:global([data-bs-theme="dark"]) section {
+  background: var(--bs-dark) !important;
+}
+
+:global([data-bs-theme="dark"]) .card {
+  background: #2d3436 !important;
+}
+
+:global([data-bs-theme="dark"]) .bg-light {
+  background: rgba(13, 110, 253, 0.1) !important;
+}
+
+/* List hover effect */
+ul li {
+  transition: transform 0.2s ease;
+}
+
+ul li:hover {
+  transform: translateX(4px);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .icon-circle,
+  .btn,
+  .card,
+  ul li {
+    transition: none !important;
+  }
+
+  .icon-circle:hover,
+  .btn:hover,
+  ul li:hover {
+    transform: none !important;
+  }
 }
 </style>

@@ -1,51 +1,47 @@
 <template>
   <div class="projects-page">
     <!-- Hero Section -->
-    <section class="hero-section page-header-spacing">
-      <div class="container py-5 position-relative">
+    <section class="hero-section position-relative overflow-hidden page-header-spacing">
+      <div class="hero-pattern position-absolute w-100 h-100"></div>
+      <div class="container position-relative py-5 my-md-3 my-lg-4">
         <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb" class="pt-3 pb-2">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><NuxtLink to="/" class="text-white-50">{{ $t('breadcrumbs.home') }}</NuxtLink></li>
-            <li class="breadcrumb-item active text-white" aria-current="page">{{ $t('breadcrumbs.projects') }}</li>
+        <nav aria-label="breadcrumb" class="mb-4">
+          <ol class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item"><NuxtLink to="/" class="text-decoration-none text-primary">{{ $t('breadcrumbs.home') }}</NuxtLink></li>
+            <li class="breadcrumb-item active text-body" aria-current="page">{{ $t('breadcrumbs.projects') }}</li>
           </ol>
         </nav>
 
-        <div class="row align-items-center">
-          <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-            <div class="mb-3">
-              <span class="badge bg-primary bg-opacity-10 text-primary fw-semibold px-3 py-2 rounded-pill">
-                <i class="bi bi-briefcase-fill me-2"></i>
-                {{ $t('projects.hero.badge') }}
-              </span>
+        <div class="row align-items-center g-4 py-4">
+          <div class="col-lg-8 mx-auto text-center">
+            <div class="badge bg-primary bg-opacity-10 text-primary fw-semibold px-3 py-2 rounded-pill mb-3">
+              <i class="bi bi-briefcase-fill me-2"></i>
+              {{ $t('projects.hero.badge') }}
             </div>
-            <h1 class="display-3 fw-bold mb-4">
-              {{ $t('projects.hero.title') }}
-            </h1>
-            <p class="lead text-body-secondary mb-5 fs-4" style="max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+            <h1 class="display-3 fw-bold mb-4 text-body-emphasis">{{ $t('projects.hero.title') }}</h1>
+            <p class="lead text-body-secondary mb-4 fs-5" style="max-width: 750px; margin: 0 auto;">
               {{ $t('projects.hero.subtitle') }}
             </p>
-            <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 mb-4">
-              <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
-                <div class="stat-icon mb-3">
-                  <i class="bi bi-briefcase-fill text-primary"></i>
+
+            <!-- Stats Row -->
+            <div class="row row-cols-2 row-cols-md-3 g-3 g-md-4 mt-3">
+              <div class="col">
+                <div class="stat-card p-3 rounded-3 bg-body-secondary bg-opacity-50 shadow-sm h-100">
+                  <div class="fs-2 fw-bold text-primary mb-1">{{ projectStats.total }}+</div>
+                  <div class="small text-body-secondary">{{ $t('projects.hero.stats.total_projects') }}</div>
                 </div>
-                <h2 class="display-4 fw-bold mb-2 text-primary">{{ projectStats.total }}+</h2>
-                <p class="mb-0 fw-semibold text-body-secondary">{{ $t('projects.hero.stats.total_projects') }}</p>
               </div>
-              <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
-                <div class="stat-icon mb-3">
-                  <i class="bi bi-calendar-check-fill text-primary"></i>
+              <div class="col">
+                <div class="stat-card p-3 rounded-3 bg-body-secondary bg-opacity-50 shadow-sm h-100">
+                  <div class="fs-2 fw-bold text-primary mb-1">25+</div>
+                  <div class="small text-body-secondary">{{ $t('projects.hero.stats.years_experience') }}</div>
                 </div>
-                <h2 class="display-4 fw-bold mb-2 text-primary">25+</h2>
-                <p class="mb-0 fw-semibold text-body-secondary">{{ $t('projects.hero.stats.years_experience') }}</p>
               </div>
-              <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                <div class="stat-icon mb-3">
-                  <i class="bi bi-people-fill text-primary"></i>
+              <div class="col">
+                <div class="stat-card p-3 rounded-3 bg-body-secondary bg-opacity-50 shadow-sm h-100">
+                  <div class="fs-2 fw-bold text-primary mb-1">15+</div>
+                  <div class="small text-body-secondary">{{ $t('projects.hero.stats.partners') }}</div>
                 </div>
-                <h2 class="display-4 fw-bold mb-2 text-primary">15+</h2>
-                <p class="mb-0 fw-semibold text-body-secondary">{{ $t('projects.hero.stats.partners') }}</p>
               </div>
             </div>
           </div>
@@ -355,70 +351,28 @@ watch([selectedCategory, selectedStatus, selectedYear, selectedFeatured, searchQ
 </script>
 
 <style scoped>
+/* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  position: relative;
-  overflow: hidden;
-  min-height: 450px;
+  background: var(--bs-body-bg);
+  min-height: 400px;
+  border-bottom: 1px solid var(--bs-border-color);
 }
 
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(13, 110, 253, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(13, 110, 253, 0.05) 0%, transparent 50%);
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(var(--bs-primary-rgb), 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(var(--bs-primary-rgb), 0.05) 0%, transparent 50%);
   background-size: 100% 100%;
-  z-index: 0;
 }
 
-.hero-section .container {
-  position: relative;
-  z-index: 1;
-}
-
-.stat-item {
-  padding: 2rem 1.5rem;
-  border-radius: 20px;
-  background: white;
-  border: 1px solid #e9ecef;
-  transition: all 0.3s ease;
-  min-width: 180px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.stat-item:hover {
-  background: white;
-  transform: translateY(-4px);
-  border-color: rgba(13, 110, 253, 0.2);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.stat-item h2 {
-  font-weight: 800;
-  letter-spacing: -1px;
-}
-
-.stat-icon {
-  width: 56px;
-  height: 56px;
-  background: rgba(13, 110, 253, 0.1);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  font-size: 1.75rem;
+/* Stat Cards */
+.stat-card {
   transition: all 0.3s ease;
 }
 
-.stat-item:hover .stat-icon {
-  background: rgba(13, 110, 253, 0.15);
-  transform: scale(1.1);
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
 .badge {
@@ -511,27 +465,18 @@ watch([selectedCategory, selectedStatus, selectedYear, selectedFeatured, searchQ
 
 /* Page header spacing - accounts for fixed navbar */
 .page-header-spacing {
-  padding-top: 56px;
+  padding-top: 72px;
 }
 
 @media (max-width: 991.98px) {
   .page-header-spacing {
-    padding-top: 56px;
-  }
-  
-  .stat-item {
-    padding: 1rem;
-    margin-bottom: 0.5rem;
+    padding-top: 64px;
   }
 }
 
 @media (max-width: 575.98px) {
   .page-header-spacing {
-    padding-top: 56px;
-  }
-  
-  .display-4 {
-    font-size: 2rem;
+    padding-top: 60px;
   }
 }
 
@@ -602,43 +547,6 @@ h4, h5 {
 /* ===================================
    DARK MODE SUPPORT
    =================================== */
-
-/* Hero section in dark mode */
-:root[data-bs-theme="dark"] .hero-section,
-.dark .hero-section {
-  background: linear-gradient(135deg, #1a1d20 0%, #2d3436 100%);
-}
-
-:root[data-bs-theme="dark"] .hero-section::before,
-.dark .hero-section::before {
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(13, 110, 253, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(13, 110, 253, 0.08) 0%, transparent 50%);
-}
-
-/* Stat items in dark mode */
-:root[data-bs-theme="dark"] .stat-item,
-.dark .stat-item {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-:root[data-bs-theme="dark"] .stat-item:hover,
-.dark .stat-item:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(13, 110, 253, 0.3);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-}
-
-:root[data-bs-theme="dark"] .stat-icon,
-.dark .stat-icon {
-  background: rgba(13, 110, 253, 0.15);
-}
-
-:root[data-bs-theme="dark"] .stat-item:hover .stat-icon,
-.dark .stat-item:hover .stat-icon {
-  background: rgba(13, 110, 253, 0.25);
-}
 
 /* Main content areas */
 :root[data-bs-theme="dark"] .projects-page,

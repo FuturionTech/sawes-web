@@ -1,3 +1,18 @@
+/**
+ * WARNING: THIS FILE CONTAINS FABRICATED DATA
+ *
+ * The team members listed below DO NOT exist and are NOT part of SAWES.
+ * According to the official SAWES profile document (docs/sawes-profile.md),
+ * SAWES only has organizational structure (Direction, Services, Teams),
+ * NOT individual named employees.
+ *
+ * This file should either be:
+ * 1. DELETED entirely, OR
+ * 2. REPLACED with real SAWES team data when available
+ *
+ * DO NOT USE this data for the About Us page or any public-facing content.
+ */
+
 export interface TeamMember {
   id: string
   name: string
@@ -13,6 +28,7 @@ export interface TeamMember {
   experience: string
 }
 
+// FAKE DATA - NOT REAL SAWES EMPLOYEES
 export const teamMembers: TeamMember[] = [
   {
     id: '1',

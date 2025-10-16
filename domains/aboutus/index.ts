@@ -13,18 +13,33 @@ export default defineNuxtModule({
         // ROUTES
         'pages:extend'(pages) {
             pages.push({
-                name: 'about',
+                name: 'about___fr',
                 path: '/about',
                 file: resolve(__dirname, 'pages/about.vue'),
             },
             {
-                name: 'about-team',
+                name: 'about___en',
+                path: '/en/about',
+                file: resolve(__dirname, 'pages/about.vue'),
+            },
+            {
+                name: 'about-team___fr',
                 path: '/about/team',
                 file: resolve(__dirname, 'pages/team.vue'),
             },
             {
-                name: 'about-methodology',
+                name: 'about-team___en',
+                path: '/en/about/team',
+                file: resolve(__dirname, 'pages/team.vue'),
+            },
+            {
+                name: 'about-methodology___fr',
                 path: '/about/methodology',
+                file: resolve(__dirname, 'pages/methodology.vue'),
+            },
+            {
+                name: 'about-methodology___en',
+                path: '/en/about/methodology',
                 file: resolve(__dirname, 'pages/methodology.vue'),
             },
             {

@@ -202,87 +202,47 @@ export const publications: Publication[] = [
   },
   {
     id: 'pub-009',
-    type: 'training-material',
+    type: 'case-study',
     title: {
-      fr: 'Manuel de Gestion Technique des Adductions d\'Eau Potable en Milieu Rural',
-      en: 'Technical Management Manual for Rural Water Supply Systems'
+      fr: 'Contrôle des Travaux du Barrage de Soum - Province du Boulkiemdé',
+      en: 'Soum Dam Construction Control - Boulkiemdé Province'
     },
     description: {
-      fr: 'Guide pratique pour les gestionnaires de systèmes d\'approvisionnement en eau potable : exploitation, maintenance préventive et corrective, gestion administrative et financière.',
-      en: 'Practical guide for water supply system managers: operation, preventive and corrective maintenance, administrative and financial management.'
+      fr: 'Rapport de suivi et contrôle des travaux de construction du barrage de Soum, un ouvrage de 83 millions de m³ de capacité réalisé entre 2005 et 2007 avec le financement de la BID.',
+      en: 'Monitoring and control report for Soum Dam construction, an 83 million m³ capacity structure built between 2005 and 2007 with IsDB funding.'
     },
-    thumbnail: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&h=300&fit=crop',
-    fileSize: '2.3 MB',
-    date: '2020-06-01',
-    year: 2020,
-    category: ['training', 'water', 'management'],
-    tags: ['manuel', 'gestion technique', 'AEP', 'rural'],
+    thumbnail: 'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?w=400&h=300&fit=crop',
+    fileSize: '3.6 MB',
+    date: '2007-12-15',
+    year: 2007,
+    category: ['infrastructure', 'dams', 'case-study'],
+    tags: ['barrage', 'Soum', 'Boulkiemdé', 'contrôle'],
     language: 'fr',
-    authors: ['SAWES'],
-    downloadCount: 421
+    authors: ['SAWES', 'Bureau PACE Koweit'],
+    partner: 'Islamic Development Bank / State of Burkina Faso',
+    downloadCount: 142
   },
   {
     id: 'pub-010',
-    type: 'annual-report',
-    title: {
-      fr: 'Rapport Annuel SAWES 2024',
-      en: 'SAWES Annual Report 2024'
-    },
-    description: {
-      fr: 'Bilan des activités 2024 : projets réalisés, partenariats développés, innovations techniques, formation et renforcement des capacités, perspectives 2025.',
-      en: '2024 activities summary: completed projects, partnerships developed, technical innovations, training and capacity building, 2025 outlook.'
-    },
-    thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
-    fileSize: '6.2 MB',
-    date: '2024-12-31',
-    year: 2024,
-    category: ['annual-report', 'corporate'],
-    tags: ['rapport annuel', 'bilan', 'activités', '2024'],
-    language: 'both',
-    authors: ['Direction SAWES'],
-    downloadCount: 287
-  },
-  {
-    id: 'pub-011',
-    type: 'guideline',
-    title: {
-      fr: 'Guide des Bonnes Pratiques en Gestion de Forages',
-      en: 'Best Practices Guide for Borehole Management'
-    },
-    description: {
-      fr: 'Recommandations techniques pour l\'implantation, le forage, l\'équipement et la maintenance des forages d\'eau potable. Inclut des fiches techniques et des check-lists.',
-      en: 'Technical recommendations for siting, drilling, equipping and maintaining drinking water boreholes. Includes technical sheets and checklists.'
-    },
-    thumbnail: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop',
-    fileSize: '1.9 MB',
-    date: '2018-09-15',
-    year: 2018,
-    category: ['guidelines', 'water', 'technical'],
-    tags: ['forages', 'bonnes pratiques', 'maintenance', 'technique'],
-    language: 'fr',
-    authors: ['SAWES'],
-    downloadCount: 356
-  },
-  {
-    id: 'pub-012',
     type: 'case-study',
     title: {
-      fr: 'Étude de Cas : Gestion Communautaire de l\'Eau dans la Région du Centre-Sud',
-      en: 'Case Study: Community Water Management in Centre-Sud Region'
+      fr: 'Étude de Barrage et d\'Aménagement Hydroagricole de Dadouné',
+      en: 'Dam and Hydro-Agricultural Development Study of Dadouné'
     },
     description: {
-      fr: 'Retour d\'expérience sur 10 ans de gestion communautaire des points d\'eau : défis, succès, leçons apprises et recommandations pour la réplication.',
-      en: '10-year experience feedback on community water point management: challenges, successes, lessons learned and recommendations for replication.'
+      fr: 'Étude technique de conception d\'un barrage et d\'aménagement d\'un périmètre irrigué dans la province de Ioba. Analyse hydrologique, géotechnique et faisabilité socio-économique.',
+      en: 'Technical design study for a dam and irrigated perimeter development in Ioba province. Hydrological, geotechnical and socio-economic feasibility analysis.'
     },
-    thumbnail: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop',
-    fileSize: '2.6 MB',
-    date: '2021-11-20',
-    year: 2021,
-    category: ['case-study', 'community', 'water'],
-    tags: ['gestion communautaire', 'retour expérience', 'Centre-Sud'],
+    thumbnail: 'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?w=400&h=300&fit=crop',
+    fileSize: '4.7 MB',
+    date: '2003-11-20',
+    year: 2003,
+    category: ['infrastructure', 'agriculture', 'dams'],
+    tags: ['barrage', 'irrigation', 'Dadouné', 'Ioba'],
     language: 'fr',
     authors: ['SAWES'],
-    downloadCount: 198
+    partner: 'State of Burkina Faso',
+    downloadCount: 87
   }
 ]
 

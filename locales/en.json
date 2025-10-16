@@ -56,7 +56,7 @@
       },
       "value3": {
         "title": "Reputation",
-        "description": "Excellent reputation with national and international partners."
+        "description": "Excellent reputation with national partners and technical and financial cooperation partners."
       }
     },
     "stats": {
@@ -216,7 +216,7 @@
       "value3": {
         "code": "A3",
         "title": "Reputation",
-        "description": "Excellent reputation with national and international partners."
+        "description": "Excellent reputation with national partners and technical and financial cooperation partners."
       }
     },
     "team": {
@@ -270,29 +270,29 @@
     },
     "training": {
       "title": "Training and awareness",
-      "description": "Promoting sanitation and environmental hygiene to contribute to collective well-being.",
+      "description": "Promoting sanitation and environmental hygiene means contributing to improving the well-being of all generations.",
       "activities": [
-        "Diagnostic studies of training needs",
-        "Design of training programs",
+        "Diagnostic study of intervention approaches in training needs",
+        "Design of training program",
         "Delivery of training sessions"
       ]
     },
     "management": {
       "title": "Urban service management and development",
-      "description": "SAWES supports communities in sustainable management of water and sanitation services.",
+      "description": "The sustainability of water and sanitation investments in communities contributes to improving living conditions and the human development index.",
       "activities": [
-        "Administration of rural water services",
-        "Consulting for project owners",
-        "Development of service extension plans"
+        "Administration of water services in rural communities",
+        "Advisory services to project owners for improving existing services",
+        "Development of extension plans to promote access to services"
       ]
     },
     "works": {
       "title": "Drinking water works",
-      "description": "Infrastructure work for access to drinking water.",
+      "description": "Meeting new needs in the field requires several types of work.",
       "activities": [
-        "Supply and installation of pumping systems",
+        "Supply and installation of new pumping systems",
         "Extension of existing systems",
-        "Maintenance and repair of facilities"
+        "Maintenance and repair"
       ]
     }
   },
@@ -873,10 +873,10 @@
     },
     "info": {
       "address_title": "Address",
-      "address_text": "10 BP 13346 Ouagadougou 10 – Burkina Faso",
+      "address_text": "10 BP: 13346 Ouagadougou 10 – Burkina Faso",
       "get_directions": "Get Directions",
       "phone_title": "Phone / Fax",
-      "phone_text": "(+226) 25 41 15 56 / 65 50 16 16",
+      "phone_text": "+226 25 41 15 56 / 65 50 16 16",
       "email_title": "Email",
       "email_text": "sawes.bf@gmail.com",
       "website_title": "Website",
@@ -889,7 +889,7 @@
     "description": "SAWES is a company specialized in water, sanitation and environment in Burkina Faso since 2000. We provide comprehensive solutions for sustainable development.",
     "company": "SAWES",
     "full_name": "Sahelian Agency for Water, Environment and Sanitation",
-    "address": "10 BP 13346 Ouagadougou 10 – Burkina Faso",
+    "address": "10 BP: 13346 Ouagadougou 10 – Burkina Faso",
     "slogan": "Promoting quality of life in the fields of water, sanitation and environment",
     "expertise": "Expertise",
     "about": "About Us",

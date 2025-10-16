@@ -1,9 +1,9 @@
 <template>
   <!-- Services Grid - Business Consulting Style -->
   <section class="container py-5">
-    <h2 class="h1 text-center">{{ $t('homepage.services.title') }}</h2>
-    <p class="text-center pb-4 mb-2 mb-lg-3">{{ $t('homepage.services.subtitle') }}</p>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+    <h2 class="h1 text-center mb-3">{{ $t('homepage.expertise.title') }}</h2>
+    <p class="text-center text-muted pb-4 mb-2 mb-lg-4 mx-auto" style="max-width: 700px;">{{ $t('homepage.expertise.subtitle') }}</p>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
 
       <!-- Service 1: Strategic Planning -->
       <div class="col">
@@ -97,7 +97,7 @@
         </NuxtLink>
       </div>
 
-      <!-- Service 5: WASH Programs -->
+      <!-- Service 5: Drinking Water Works -->
       <div class="col">
         <NuxtLink :to="servicesPath" class="card card-hover-primary border-0 h-100 text-decoration-none">
           <div class="card-body pb-0">
@@ -120,29 +120,6 @@
         </NuxtLink>
       </div>
 
-      <!-- Service 6: Environmental Assessment -->
-      <div class="col">
-        <NuxtLink :to="servicesPath" class="card card-hover-primary border-0 h-100 text-decoration-none">
-          <div class="card-body pb-0">
-            <svg class="d-block text-warning mb-4" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <g class="text-success">
-                <path d="M20 5L10 15h6v12h8V15h6L20 5z" fill="currentColor"></path>
-              </g>
-              <g class="text-primary">
-                <path d="M35 30H5c-2.8 0-5 2.2-5 5v5h40v-5c0-2.8-2.2-5-5-5z" fill="currentColor"></path>
-              </g>
-            </svg>
-            <h3 class="h4 card-title mt-0">{{ $t('homepage.services.environmental.title') }}</h3>
-            <p class="card-text">{{ $t('homepage.services.environmental.description') }}</p>
-          </div>
-          <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-            <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-              <i class="ai-arrow-right"></i>
-            </div>
-          </div>
-        </NuxtLink>
-      </div>
-
     </div>
   </section>
 </template>
@@ -155,14 +132,52 @@ const servicesPath = computed(() => locale.value === 'en' ? '/en/services' : '/s
 </script>
 
 <style scoped>
-/* Simple hover effect for cards */
-.card-hover-primary {
+/* Card styling */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
 .card-hover-primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(31, 27, 45, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Card content */
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Card footer */
+.card-footer {
+  background: transparent;
+  padding: 0 2rem 2rem 2rem;
+}
+
+/* Icon button */
+.btn-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 /* Ensure card footer button doesn't animate */
@@ -170,14 +185,56 @@ const servicesPath = computed(() => locale.value === 'en' ? '/en/services' : '/s
   pointer-events: none;
 }
 
+/* SVG icons */
+svg {
+  flex-shrink: 0;
+}
+
 /* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-footer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+}
+
 @media (max-width: 767.98px) {
-  .h4 {
-    font-size: 1.25rem;
+  .card-title {
+    font-size: 1.125rem;
   }
 
   .card-text {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card-footer {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+/* Dark mode support */
+:global([data-bs-theme="dark"]) .card {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+:global([data-bs-theme="dark"]) .card-hover-primary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+:global([data-bs-theme="dark"]) .card-title {
+  color: #f8f9fa;
+}
+
+:global([data-bs-theme="dark"]) .card-text {
+  color: #adb5bd;
 }
 </style>

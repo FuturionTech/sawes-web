@@ -201,6 +201,9 @@
           </div>
 
           <!-- Impact Metrics -->
+          <!-- WARNING: These statistics need verification against official SAWES profile document -->
+          <!-- Profile document (docs/sawes-profile.md) does not explicitly state these numbers -->
+          <!-- TODO: Verify or recalculate based on documented projects and partnerships -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card h-100 border-0 shadow-sm hover-lift">
               <div class="card-body p-4">
@@ -210,24 +213,28 @@
                 <div class="row g-3">
                   <div class="col-6">
                     <div class="p-3 bg-primary bg-opacity-10 rounded-3 text-center stat-card">
+                      <!-- 2000-2025 = 25 years exactly, not "25+" -->
                       <div class="h3 fw-bold text-primary mb-1">25+</div>
                       <small class="text-muted">{{ $t('about.stats.years_experience') }}</small>
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="p-3 bg-info bg-opacity-10 rounded-3 text-center stat-card">
+                      <!-- Profile lists ~20 documented projects - verify this number -->
                       <div class="h3 fw-bold text-info mb-1">30+</div>
                       <small class="text-muted">{{ $t('about.stats.projects_completed') }}</small>
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="p-3 bg-success bg-opacity-10 rounded-3 text-center stat-card">
+                      <!-- Profile mentions: AFD, BAD, CEDEAO, UNICEF, EU, ONEA, Taiwan, BID, etc. = ~10-12 partners -->
                       <div class="h3 fw-bold text-success mb-1">10+</div>
                       <small class="text-muted">{{ $t('about.stats.international_partners') }}</small>
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="p-3 bg-warning bg-opacity-10 rounded-3 text-center stat-card">
+                      <!-- Profile mentions: Centre-Sud, Centre-Est, Plateau Central, Centre, Centre-Ouest = 5 explicitly named -->
                       <div class="h3 fw-bold text-warning mb-1">7+</div>
                       <small class="text-muted">{{ $t('about.stats.regions_covered') }}</small>
                     </div>

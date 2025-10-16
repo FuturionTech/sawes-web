@@ -70,44 +70,48 @@ This renewal allows us to continue our mission of continuous improvement in acce
   },
   {
     id: 'news-002',
-    slug: 'journee-mondiale-eau-2025-sawes-sensibilise',
-    type: 'event-coverage',
+    slug: 'historique-gestion-forages-centre-sud',
+    type: 'news',
     featured: true,
     title: {
-      fr: 'SAWES célèbre la Journée Mondiale de l\'Eau 2025',
-      en: 'SAWES celebrates World Water Day 2025'
+      fr: 'Bilan du programme de 100 forages dans la région Centre-Sud',
+      en: 'Results of 100 boreholes program in Centre-Sud region'
     },
     excerpt: {
-      fr: 'Campagne de sensibilisation et activités communautaires pour promouvoir la gestion durable des ressources en eau.',
-      en: 'Awareness campaign and community activities to promote sustainable water resource management.'
+      fr: 'Retour sur le programme réussi de réalisation de 100 forages positifs dans la région du Centre-Sud avec l\'UEMOA.',
+      en: 'Review of the successful program for 100 positive boreholes in the Centre-Sud region with UEMOA.'
     },
     content: {
-      fr: `À l'occasion de la Journée Mondiale de l'Eau 2025, SAWES a organisé une série d'activités de sensibilisation dans plusieurs communes du Burkina Faso. Cette initiative vise à renforcer la conscience collective sur l'importance de la préservation des ressources en eau.
+      fr: `SAWES a assuré avec succès la maîtrise d'œuvre technique pour le contrôle des travaux de 100 forages positifs dans la région du Centre-Sud, dans le cadre du Projet 300 forages positifs de l'UEMOA.
 
-Activités organisées :
-- Conférences dans les écoles primaires sur l'hygiène et l'assainissement
-- Démonstrations pratiques de techniques d'économie d'eau
-- Distribution de matériel éducatif
-- Visites guidées d'installations d'eau potable
-- Sessions de formation pour les gestionnaires de points d'eau
+Réalisations du projet :
+- Contrôle de l'intermédiation sociale auprès des communautés
+- Implantation technique des forages selon les normes
+- Supervision des travaux de forage
+- Contrôle de la pose des pompes à motricité humaine
+- Accompagnement des communautés pour la gestion des ouvrages
 
-Plus de 500 personnes ont participé à ces activités, incluant des élèves, des enseignants, des leaders communautaires et des gestionnaires de services d'eau. Cette mobilisation témoigne de l'engagement de SAWES dans la promotion d'une culture de gestion durable de l'eau.`,
-      en: `On the occasion of World Water Day 2025, SAWES organized a series of awareness activities in several communes of Burkina Faso. This initiative aims to strengthen collective awareness of the importance of water resource preservation.
+Ce projet, réalisé en partenariat avec le Bureau d'ingénieur conseil SEROHS-Mali, a permis d'améliorer significativement l'accès à l'eau potable pour les populations rurales de la région Centre-Sud.
 
-Organized activities:
-- Conferences in primary schools on hygiene and sanitation
-- Practical demonstrations of water-saving techniques
-- Distribution of educational materials
-- Guided tours of drinking water facilities
-- Training sessions for water point managers
+L'expérience acquise dans ce programme continue de guider nos interventions dans le domaine de l'hydraulique rurale.`,
+      en: `SAWES successfully provided technical project management for supervising the construction of 100 positive boreholes in the Centre-Sud region, as part of UEMOA's 300 Positive Boreholes Project.
 
-More than 500 people participated in these activities, including students, teachers, community leaders and water service managers. This mobilization demonstrates SAWES' commitment to promoting a culture of sustainable water management.`
+Project achievements:
+- Control of social intermediation with communities
+- Technical siting of boreholes according to standards
+- Supervision of drilling works
+- Control of hand pump installation
+- Community support for facility management
+
+This project, implemented in partnership with consulting firm SEROHS-Mali, significantly improved access to drinking water for rural populations in the Centre-Sud region.
+
+The experience gained from this program continues to guide our interventions in rural water supply.`
     },
     image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=600&fit=crop',
-    date: '2025-03-22',
-    category: ['water', 'education', 'events'],
-    tags: ['journée mondiale eau', 'sensibilisation', 'éducation', 'communauté'],
-    author: 'Service Commercial SAWES'
+    date: '2024-03-15',
+    category: ['water', 'infrastructure', 'projects'],
+    tags: ['forages', 'UEMOA', 'Centre-Sud', 'hydraulique rurale'],
+    author: 'Direction Technique SAWES'
   },
   {
     id: 'news-003',
@@ -201,45 +205,45 @@ This initiative is part of SAWES' vision to promote the sustainability of water 
   },
   {
     id: 'news-005',
-    slug: 'evaluation-impact-projets-wash-milieu-scolaire',
+    slug: 'etude-wash-milieu-scolaire-unicef-2007',
     type: 'news',
     featured: false,
     title: {
-      fr: 'Résultats positifs de l\'évaluation des projets WASH en milieu scolaire',
-      en: 'Positive results from WASH projects evaluation in schools'
+      fr: 'L\'étude SAWES-UNICEF sur le WASH en milieu scolaire continue d\'inspirer',
+      en: 'SAWES-UNICEF study on WASH in schools continues to inspire'
     },
     excerpt: {
-      fr: 'Les projets d\'eau, d\'assainissement et d\'hygiène dans les écoles montrent des résultats encourageants.',
-      en: 'Water, sanitation and hygiene projects in schools show encouraging results.'
+      fr: 'Retour sur l\'étude clé de 2007 qui a permis d\'harmoniser les approches WASH dans les écoles du Burkina Faso.',
+      en: 'Review of the key 2007 study that harmonized WASH approaches in schools across Burkina Faso.'
     },
     content: {
-      fr: `Une évaluation récente des projets WASH (Water, Sanitation and Hygiene) en milieu scolaire au Burkina Faso révèle des impacts significatifs sur la santé et l'éducation des enfants.
+      fr: `L'étude réalisée par SAWES en 2007 pour l'UNICEF sur les approches d'interventions en matière d'eau potable, d'assainissement et d'éducation à l'hygiène en milieu scolaire primaire continue d'avoir un impact majeur.
 
-Résultats clés :
-- Réduction de 40% des maladies hydriques chez les élèves
-- Amélioration de 25% du taux de présence scolaire
-- Augmentation de la scolarisation des filles grâce aux installations sanitaires adaptées
-- Meilleure sensibilisation aux pratiques d'hygiène
+Cette recherche a permis de :
+- Capitaliser les nombreuses expériences en matière de WASH scolaire
+- Identifier les meilleures pratiques
+- Proposer une harmonisation des approches
+- Établir des recommandations pour le passage à l'échelle
 
-Ces résultats font suite aux recommandations de l'étude SAWES-UNICEF de 2007 sur l'harmonisation des approches WASH en milieu scolaire. Ils confirment l'importance d'interventions intégrées combinant infrastructures, éducation et mobilisation communautaire.
+Les conclusions de cette étude ont guidé la conception de nombreux programmes d'intervention dans les écoles primaires burkinabè. L'approche intégrée recommandée, combinant infrastructures, éducation à l'hygiène et mobilisation communautaire, est devenue une référence pour les acteurs du secteur.
 
-SAWES continue de plaider pour un passage à l'échelle de ces approches réussies dans l'ensemble du système éducatif burkinabè.`,
-      en: `A recent evaluation of WASH (Water, Sanitation and Hygiene) projects in schools in Burkina Faso reveals significant impacts on children's health and education.
+SAWES continue de mettre son expertise au service de l'amélioration des conditions d'hygiène et d'assainissement dans les établissements scolaires, contribuant ainsi à la santé et à l'éducation des enfants.`,
+      en: `The 2007 study conducted by SAWES for UNICEF on intervention approaches for drinking water, sanitation and hygiene education in primary schools continues to have a major impact.
 
-Key results:
-- 40% reduction in water-borne diseases among students
-- 25% improvement in school attendance rate
-- Increased enrollment of girls thanks to appropriate sanitary facilities
-- Better awareness of hygiene practices
+This research helped to:
+- Capitalize on numerous experiences in school WASH
+- Identify best practices
+- Propose harmonization of approaches
+- Establish recommendations for scaling up
 
-These results follow the recommendations of the 2007 SAWES-UNICEF study on harmonizing WASH approaches in schools. They confirm the importance of integrated interventions combining infrastructure, education and community mobilization.
+The study's conclusions have guided the design of numerous intervention programs in Burkinabe primary schools. The recommended integrated approach, combining infrastructure, hygiene education and community mobilization, has become a reference for sector actors.
 
-SAWES continues to advocate for scaling up these successful approaches throughout the Burkinabe education system.`
+SAWES continues to put its expertise at the service of improving hygiene and sanitation conditions in schools, thus contributing to children's health and education.`
     },
     image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=600&fit=crop',
     date: '2024-06-20',
-    category: ['education', 'health', 'wash'],
-    tags: ['WASH', 'écoles', 'évaluation', 'santé', 'éducation'],
+    category: ['education', 'wash', 'studies'],
+    tags: ['WASH', 'écoles', 'UNICEF', 'étude', 'harmonisation'],
     author: 'Équipe Études SAWES'
   },
   {
@@ -248,44 +252,201 @@ SAWES continues to advocate for scaling up these successful approaches throughou
     type: 'news',
     featured: true,
     title: {
-      fr: 'SAWES adopte les technologies de pompage solaire',
-      en: 'SAWES adopts solar pumping technologies'
+      fr: 'SAWES intègre le pompage solaire dans ses services',
+      en: 'SAWES integrates solar pumping in its services'
     },
     excerpt: {
-      fr: 'Déploiement de systèmes de pompage photovoltaïque pour une gestion durable de l\'eau.',
-      en: 'Deployment of photovoltaic pumping systems for sustainable water management.'
+      fr: 'Installation d\'un système de pompage photovoltaïque pour une gestion durable de l\'eau.',
+      en: 'Installation of photovoltaic pumping system for sustainable water management.'
     },
     content: {
-      fr: `Dans le cadre de sa stratégie d'innovation, SAWES intègre désormais les technologies de pompage solaire dans ses projets d'approvisionnement en eau potable.
+      fr: `Dans le cadre de sa stratégie d'innovation, SAWES a intégré les technologies de pompage solaire dans ses services d'approvisionnement en eau potable.
+
+SAWES a réalisé la fourniture et la pose d'un générateur photovoltaïque composé de 19 plaques solaires de 270 volts pour un système d'adduction d'eau potable en milieu rural.
 
 Avantages des systèmes solaires :
-- Réduction des coûts d'exploitation (pas de carburant)
+- Réduction significative des coûts d'exploitation (pas de carburant)
 - Diminution de l'empreinte carbone
 - Fiabilité et durabilité accrues
 - Maintenance simplifiée
 - Autonomie énergétique des installations
 
-SAWES a déjà installé plusieurs générateurs photovoltaïques, dont un système de 19 plaques solaires de 270 volts. Ces installations ont démontré une réduction de 60% des coûts opérationnels par rapport aux systèmes diesel conventionnels.
+Cette expérience réussie démontre le potentiel des énergies renouvelables pour améliorer la durabilité des services d'eau en milieu rural. SAWES continue d'explorer les innovations technologiques pour répondre aux défis de l'accès à l'eau potable.
 
-Cette transition vers les énergies renouvelables s'inscrit dans l'engagement de SAWES pour un développement durable et la lutte contre le changement climatique.`,
-      en: `As part of its innovation strategy, SAWES now integrates solar pumping technologies into its drinking water supply projects.
+Cette initiative s'inscrit dans l'engagement de SAWES pour un développement durable et la promotion de solutions respectueuses de l'environnement.`,
+      en: `As part of its innovation strategy, SAWES has integrated solar pumping technologies into its drinking water supply services.
+
+SAWES completed the supply and installation of a photovoltaic generator composed of 19 solar panels of 270 volts for a rural drinking water supply system.
 
 Advantages of solar systems:
-- Reduced operating costs (no fuel)
+- Significant reduction in operating costs (no fuel)
 - Decreased carbon footprint
 - Increased reliability and durability
 - Simplified maintenance
 - Energy autonomy of facilities
 
-SAWES has already installed several photovoltaic generators, including a 19-panel 270-volt system. These installations have demonstrated a 60% reduction in operating costs compared to conventional diesel systems.
+This successful experience demonstrates the potential of renewable energy to improve the sustainability of rural water services. SAWES continues to explore technological innovations to address drinking water access challenges.
 
-This transition to renewable energy is part of SAWES' commitment to sustainable development and climate change mitigation.`
+This initiative is part of SAWES' commitment to sustainable development and promotion of environmentally friendly solutions.`
     },
     image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=600&fit=crop',
     date: '2024-08-15',
     category: ['innovation', 'technology', 'renewable-energy'],
     tags: ['solaire', 'photovoltaïque', 'innovation', 'énergie renouvelable'],
     author: 'Direction Technique SAWES'
+  },
+  {
+    id: 'news-007',
+    slug: 'bilan-programme-1000-forages-taiwan',
+    type: 'news',
+    featured: false,
+    title: {
+      fr: 'Succès du programme de 1000 forages positifs au Burkina Faso',
+      en: 'Success of 1000 positive boreholes program in Burkina Faso'
+    },
+    excerpt: {
+      fr: 'SAWES a assuré le suivi et l\'administration de la réalisation de 1000 forages positifs financés par la République de Chine (Taïwan).',
+      en: 'SAWES provided monitoring and administration for 1000 positive boreholes funded by the Republic of China (Taiwan).'
+    },
+    content: {
+      fr: `Entre 2004 et 2008, SAWES a joué un rôle majeur dans le suivi et l'administration des travaux de réalisation de 1000 forages positifs au Burkina Faso, financés par la République de Chine (Taïwan).
+
+Responsabilités de SAWES :
+- Programmation des activités et coordination générale
+- Contrôle à pied d'œuvre des travaux de forages
+- Supervision de la construction des margelles
+- Contrôle de l'installation des pompes à motricité humaine
+- Coordination avec le Bureau d'ingénieur conseil BAFRENAH
+
+Impact du programme :
+Ce programme d'envergure a considérablement amélioré l'accès à l'eau potable dans les zones rurales du Burkina Faso. Les 1000 forages ont bénéficié à des centaines de milliers de personnes dans différentes régions du pays.
+
+L'expertise technique de SAWES et sa capacité de coordination ont été essentielles au succès de ce programme ambitieux, qui demeure l'un des plus importants projets d'hydraulique rurale réalisés au Burkina Faso.`,
+      en: `Between 2004 and 2008, SAWES played a major role in monitoring and administering the construction of 1000 positive boreholes in Burkina Faso, funded by the Republic of China (Taiwan).
+
+SAWES responsibilities:
+- Activity programming and overall coordination
+- On-site control of drilling works
+- Supervision of well curb construction
+- Control of hand pump installation
+- Coordination with consulting firm BAFRENAH
+
+Program impact:
+This large-scale program significantly improved access to drinking water in rural areas of Burkina Faso. The 1000 boreholes benefited hundreds of thousands of people in different regions of the country.
+
+SAWES' technical expertise and coordination capacity were essential to the success of this ambitious program, which remains one of the largest rural water supply projects implemented in Burkina Faso.`
+    },
+    image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=1200&h=600&fit=crop',
+    date: '2024-05-10',
+    category: ['water', 'infrastructure', 'projects'],
+    tags: ['forages', 'Taïwan', 'hydraulique rurale', 'coopération'],
+    author: 'Direction SAWES'
+  },
+  {
+    id: 'news-008',
+    slug: 'controle-barrage-yakouta-2003-2008',
+    type: 'news',
+    featured: false,
+    title: {
+      fr: 'Réalisation du barrage de Yakouta : un projet d\'envergure',
+      en: 'Yakouta Dam completion: a major project'
+    },
+    excerpt: {
+      fr: 'SAWES a assuré le contrôle et la surveillance des travaux de construction du barrage de Yakouta de 26,5 millions de m³.',
+      en: 'SAWES provided control and supervision of Yakouta Dam construction works with 26.5 million m³ capacity.'
+    },
+    content: {
+      fr: `De 2003 à 2008, SAWES a été en charge du contrôle et de la surveillance des travaux de construction du barrage de Yakouta, un ouvrage de 26,5 millions de m³ de capacité, financé par la République de Chine (Taïwan).
+
+Missions de SAWES :
+- Contrôle technique de l'exécution des travaux
+- Surveillance de la qualité de la construction
+- Vérification de la conformité aux normes
+- Reporting régulier sur l'avancement
+- Coordination avec les entreprises de travaux
+
+Le barrage de Yakouta constitue une infrastructure stratégique pour :
+- L'approvisionnement en eau potable
+- Le développement de l'agriculture irriguée
+- L'élevage
+- La pêche
+
+Ce projet illustre la capacité de SAWES à superviser des ouvrages hydrauliques de grande envergure et sa contribution au développement des infrastructures d'eau au Burkina Faso.`,
+      en: `From 2003 to 2008, SAWES was responsible for controlling and supervising the construction of Yakouta Dam, a structure with 26.5 million m³ capacity, funded by the Republic of China (Taiwan).
+
+SAWES missions:
+- Technical control of work execution
+- Construction quality monitoring
+- Standards compliance verification
+- Regular progress reporting
+- Coordination with construction companies
+
+Yakouta Dam constitutes strategic infrastructure for:
+- Drinking water supply
+- Irrigated agriculture development
+- Livestock farming
+- Fishing
+
+This project illustrates SAWES' capacity to supervise large-scale hydraulic works and its contribution to water infrastructure development in Burkina Faso.`
+    },
+    image: 'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?w=1200&h=600&fit=crop',
+    date: '2024-07-18',
+    category: ['infrastructure', 'dams', 'projects'],
+    tags: ['barrage', 'Yakouta', 'infrastructure', 'contrôle'],
+    author: 'Direction Technique SAWES'
+  },
+  {
+    id: 'news-009',
+    slug: 'programme-vreo-valorisation-ressources-eau-ouest',
+    type: 'news',
+    featured: false,
+    title: {
+      fr: 'Programme VREO : 6 ans d\'assistance technique réussie',
+      en: 'VREO Program: 6 years of successful technical assistance'
+    },
+    excerpt: {
+      fr: 'Retour sur l\'assistance technique à la maîtrise d\'œuvre du Programme de Valorisation des Ressources en Eau de l\'Ouest (2004-2010).',
+      en: 'Review of technical assistance for the Western Water Resources Development Program (2004-2010).'
+    },
+    content: {
+      fr: `De 2004 à 2010, SAWES a fourni une assistance technique à la Maîtrise d'Œuvre Déléguée du Programme de Valorisation des Ressources en Eau de l'Ouest (VREO), financé par l'Union européenne dans le cadre du 8ème FED.
+
+Le programme comprenait deux composantes principales :
+- Composante A : Alimentation en Eau Potable
+- Composante B : Appui institutionnel et technique au secteur de l'eau
+
+Activités de SAWES :
+- Assistance technique aux équipes de maîtrise d'œuvre
+- Suivi de la réalisation des infrastructures d'eau potable
+- Appui au renforcement institutionnel
+- Accompagnement des acteurs locaux
+- Coordination avec le Bureau d'ingénieur conseil SOFRECO-France
+
+Ce programme a permis d'améliorer significativement l'accès à l'eau potable dans les régions de l'Ouest du Burkina Faso et de renforcer les capacités des institutions du secteur de l'eau.
+
+L'expérience acquise sur ce programme continue d'enrichir l'expertise de SAWES dans l'accompagnement de programmes complexes d'envergure régionale.`,
+      en: `From 2004 to 2010, SAWES provided technical assistance to the Delegated Project Management of the Western Water Resources Development Program (VREO), funded by the European Union under the 8th EDF.
+
+The program included two main components:
+- Component A: Drinking Water Supply
+- Component B: Institutional and technical support to the water sector
+
+SAWES activities:
+- Technical assistance to project management teams
+- Monitoring of drinking water infrastructure implementation
+- Institutional strengthening support
+- Support to local stakeholders
+- Coordination with consulting firm SOFRECO-France
+
+This program significantly improved access to drinking water in the western regions of Burkina Faso and strengthened the capacities of water sector institutions.
+
+The experience gained from this program continues to enrich SAWES' expertise in supporting complex regional programs.`
+    },
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&h=600&fit=crop',
+    date: '2024-04-25',
+    category: ['programs', 'water', 'capacity-building'],
+    tags: ['VREO', 'Union européenne', 'assistance technique', 'Ouest'],
+    author: 'Direction SAWES'
   }
 ]
 

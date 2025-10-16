@@ -56,7 +56,7 @@
       },
       "value3": {
         "title": "Réputation",
-        "description": "Excellente réputation auprès des partenaires nationaux et internationaux."
+        "description": "Excellente réputation auprès des partenaires nationaux et de coopération technique et financière."
       }
     },
     "stats": {
@@ -216,7 +216,7 @@
       "value3": {
         "code": "A3",
         "title": "Réputation",
-        "description": "Excellente réputation auprès des partenaires nationaux et internationaux."
+        "description": "Excellente réputation auprès des partenaires nationaux et de coopération technique et financière."
       }
     },
     "team": {
@@ -270,29 +270,29 @@
     },
     "training": {
       "title": "Formation et sensibilisation",
-      "description": "Promouvoir l'assainissement et l'hygiène du milieu pour contribuer au bien-être collectif.",
+      "description": "Promouvoir l'assainissement et l'hygiène du milieu, c'est contribuer à l'amélioration du bien-être de toutes les générations.",
       "activities": [
-        "Études diagnostiques des besoins de formation",
-        "Conception de programmes de formation",
-        "Réalisation de sessions de formation"
+        "Étude diagnostic des approches d'intervention en matière de besoins de formation",
+        "Conception du programme de formation",
+        "Réalisation des formations"
       ]
     },
     "management": {
       "title": "Gestion et développement de services urbains",
-      "description": "SAWES accompagne les collectivités dans la gestion durable des services d'eau et d'assainissement.",
+      "description": "La pérennité des investissements d'eau et d'assainissement dans les collectivités participe à l'amélioration du cadre de vie et de l'indice de développement humain.",
       "activities": [
-        "Administration des services d'eau en milieu rural",
-        "Conseil aux maîtres d'ouvrage",
-        "Établissement de plans d'extension des services"
+        "Administration des services d'eau dans les collectivités rurales",
+        "Conseils aux maîtres d'ouvrage pour l'amélioration des services existants",
+        "Établissement des plans d'extension pour promouvoir l'accès aux services"
       ]
     },
     "works": {
       "title": "Travaux d'eau potable",
-      "description": "Réalisation de travaux d'infrastructure pour l'accès à l'eau potable.",
+      "description": "La satisfaction des besoins nouveaux dans le domaine nécessite plusieurs types de travaux.",
       "activities": [
-        "Fourniture et pose de systèmes de pompage",
+        "Fourniture et pose de nouveaux systèmes de pompage",
         "Extension des systèmes existants",
-        "Maintenance et réparation des installations"
+        "Maintenance et réparation"
       ]
     }
   },
@@ -873,10 +873,10 @@
     },
     "info": {
       "address_title": "Adresse",
-      "address_text": "10 BP 13346 Ouagadougou 10 – Burkina Faso",
+      "address_text": "10 BP: 13346 Ouagadougou 10 – Burkina Faso",
       "get_directions": "Obtenir l'itinéraire",
       "phone_title": "Téléphone / Fax",
-      "phone_text": "(+226) 25 41 15 56 / 65 50 16 16",
+      "phone_text": "+226 25 41 15 56 / 65 50 16 16",
       "email_title": "Email",
       "email_text": "sawes.bf@gmail.com",
       "website_title": "Site Web",
@@ -889,7 +889,7 @@
     "description": "SAWES est une société spécialisée dans l'eau, l'assainissement et l'environnement au Burkina Faso depuis 2000. Nous fournissons des solutions complètes pour le développement durable.",
     "company": "SAWES",
     "full_name": "Sahelian Agency for Water, Environment and Sanitation",
-    "address": "10 BP 13346 Ouagadougou 10 – Burkina Faso",
+    "address": "10 BP: 13346 Ouagadougou 10 – Burkina Faso",
     "slogan": "Promouvoir la qualité de la vie dans les domaines de l'eau, de l'assainissement et de l'environnement",
     "expertise": "Expertises",
     "about": "À Propos",

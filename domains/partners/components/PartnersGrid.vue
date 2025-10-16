@@ -1,11 +1,11 @@
 <template>
-  <section class="py-5 bg-light">
+  <section class="py-5 bg-white">
     <div class="container">
       <!-- Section Header -->
       <div class="row mb-5">
-        <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+        <div class="col-lg-10 mx-auto text-center" data-aos="fade-up">
           <h2 class="display-5 fw-bold mb-3">{{ $t('partners.grid.title') }}</h2>
-          <p class="lead text-muted">{{ $t('partners.grid.subtitle') }}</p>
+          <p class="lead text-body-secondary mb-0">{{ $t('partners.grid.subtitle') }}</p>
         </div>
       </div>
 
@@ -180,11 +180,60 @@ const resetFilters = () => {
 
 <style scoped>
 .hover-lift {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12)!important;
+}
+
+/* Dark mode support */
+:global([data-bs-theme="dark"]) section {
+  background: var(--bs-dark) !important;
+}
+
+:global([data-bs-theme="dark"]) .hover-lift {
+  background: #2d3436 !important;
+}
+
+:global([data-bs-theme="dark"]) .hover-lift:hover {
+  box-shadow: 0 8px 24px rgba(13, 110, 253, 0.2)!important;
+}
+
+/* Category Filters */
+.btn-outline-primary {
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary {
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+/* Search input */
+.input-group {
+  transition: all 0.2s ease;
+}
+
+.input-group:focus-within {
+  box-shadow: 0 4px 16px rgba(13, 110, 253, 0.15)!important;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hover-lift,
+  .btn-outline-primary {
+    transition: none !important;
+  }
+
+  .hover-lift:hover,
+  .btn-outline-primary:hover {
+    transform: none !important;
+  }
 }
 </style>

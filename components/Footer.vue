@@ -44,7 +44,7 @@
         </div>
 
         <!-- Quick Links Column -->
-        <div class="col-lg-2 col-md-3 col-6">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-12">
           <h6 class="footer-heading mb-3">{{ $t('header.expertise') }}</h6>
           <ul class="footer-links list-unstyled mb-0">
             <li class="mb-2"><NuxtLink :to="localePath('/services')">{{ $t('header.expertise') }}</NuxtLink></li>
@@ -55,7 +55,7 @@
         </div>
 
         <!-- Company Column -->
-        <div class="col-lg-2 col-md-3 col-6">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-12">
           <h6 class="footer-heading mb-3">{{ $t('header.about') }}</h6>
           <ul class="footer-links list-unstyled mb-0">
             <li class="mb-2"><NuxtLink :to="localePath('/about')">{{ $t('header.about') }}</NuxtLink></li>
@@ -223,23 +223,109 @@ const careersPath = computed(() => locale.value === 'en' ? '/en/careers' : '/car
   .footer-contact {
     font-size: 0.85rem;
   }
-
-  .col-6:first-child .footer-heading {
-    margin-top: 0;
-  }
 }
 
 @media (max-width: 575.98px) {
-  .footer-modern .row.gy-4 {
+  /* Improve mobile footer layout */
+  .footer-modern .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Center company info and social icons */
+  .col-lg-4.col-md-6:first-child {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .col-lg-4.col-md-6:first-child p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9rem;
+  }
+
+  .col-lg-4.col-md-6:first-child .d-flex {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* Section spacing and dividers */
+  .row.gy-4 > div:not(:first-child) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f1f3f5;
+  }
+
+  .row.gy-4 > div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* Enhanced section headings */
+  .footer-heading {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #0000FF;
+    display: inline-block;
+    width: auto;
+  }
+
+  /* Center all menu sections */
+  .row.gy-4 > div:not(:first-child) {
+    text-align: center;
+  }
+
+  /* Better link styling */
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-links li {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+    color: #495057;
+  }
+
+  /* Contact section improvements */
+  .footer-contact {
     text-align: center;
   }
 
   .footer-contact li {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 0.5rem;
     justify-content: center;
   }
 
-  .social-icon {
-    margin: 0 0.25rem;
+  .footer-contact i {
+    font-size: 1.25rem;
+  }
+
+  .footer-contact a,
+  .footer-contact span {
+    font-size: 0.9rem;
+  }
+
+  /* Footer bottom */
+  .footer-bottom {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .footer-bottom .col-md-6 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom .col-md-6:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -275,6 +361,21 @@ const careersPath = computed(() => locale.value === 'en' ? '/en/careers' : '/car
 
   .footer-bottom {
     border-top-color: #2d3139;
+  }
+
+  /* Dark mode mobile specific */
+  @media (max-width: 575.98px) {
+    .col-lg-4.col-md-6:first-child {
+      border-bottom-color: #2d3139;
+    }
+
+    .row.gy-4 > div:not(:first-child) {
+      border-bottom-color: #2d3139;
+    }
+
+    .footer-contact li {
+      background: #2d3139;
+    }
   }
 }
 </style>

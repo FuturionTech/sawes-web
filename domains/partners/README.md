@@ -30,17 +30,16 @@ domains/partners/
 
 ### 1. Partners Hero Section
 - Eye-catching gradient hero with statistics
-- Key metrics: 30+ partners, 15 countries, 20+ years, 50+ projects
+- Key metrics: 18+ partners, 10 countries, 25+ years, 35+ projects
 - Wave decoration and pattern overlay
 
 ### 2. Partner Categories
-Partners are organized into 6 categories:
-- **International Organizations**: UN agencies, World Bank, AfDB, EU
-- **Bilateral Cooperation**: GIZ, AFD, USAID, JICA, Taiwan
-- **NGOs & Civil Society**: CREPA, WaterAid, PSE/PDM
-- **Private Sector**: Consulting firms (SOFRECO, EDE, CODEX, etc.)
-- **Government & Public Institutions**: ONEA, State of Burkina Faso, UEMOA
-- **Academic & Research**: 2iE, IRD
+Partners are organized into 5 categories:
+- **International Organizations**: UNICEF, AfDB, ECOWAS, EU-EDF, AFD
+- **Bilateral Cooperation**: Taiwan, IDB/Kuwait
+- **NGOs & Civil Society**: CREPA, PSE/PDM
+- **Private Sector**: Consulting firms (SOFRECO, EDE, CODEX, BAFRENAH, SEROHS)
+- **Government & Public Institutions**: ONEA, State of Burkina Faso, UEMOA, Rural Municipalities
 
 ### 3. PartnersGrid Component
 - **Category Filtering**: Filter partners by category
@@ -171,7 +170,6 @@ partners: {
   - NGO: Danger (red)
   - Private: Info (cyan)
   - Government: Warning (yellow)
-  - Academic: Secondary (gray)
 - **Responsive breakpoints**: Mobile-first design
 - **AOS animations**: Fade-up, zoom-in effects
 
@@ -202,13 +200,14 @@ No additional configuration needed. The module auto-registers:
 
 ## Partner Data
 
-Current partners (30+):
-- **International (7)**: AFD, AfDB, ECOWAS, UNICEF, EU-EDF, World Bank, UNDP
-- **Bilateral (5)**: GIZ, Taiwan, IDB/Kuwait, USAID, JICA
-- **NGOs (3)**: PSE/PDM, CREPA, WaterAid
+Current partners (18):
+- **International (5)**: AFD, AfDB, ECOWAS/CCRE, UNICEF, EU-EDF
+- **Bilateral (2)**: Taiwan, IDB/Kuwait
+- **NGOs (2)**: PSE/PDM, CREPA
 - **Private (5)**: SOFRECO, EDE Senegal, CODEX, BAFRENAH, SEROHS
 - **Government (4)**: ONEA, State of Burkina Faso, UEMOA, Rural Municipalities
-- **Academic (2)**: 2iE, IRD
+
+Note: All partners listed are verified from SAWES project documentation (`/docs/sawes-profile.md`) and actual collaborations.
 
 ## Development
 

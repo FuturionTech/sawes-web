@@ -44,7 +44,7 @@
             <NuxtLink class="nav-link" :to="partnersPath">{{ $t('header.partners') }}</NuxtLink>
           </li>
           <!-- Resources Dropdown Menu -->
-          <RessourcesMenu />
+          <!-- <RessourcesMenu /> -->
         </ul>
         <div class="d-sm-none p-3 mt-n3">
           <!-- Language selector for mobile -->
@@ -133,6 +133,11 @@ watch(() => route.path, () => {
 /* Active nav link */
 .nav-link.router-link-active {
   font-weight: 600;
+  color: var(--bs-primary);
+}
+
+.nav-link.router-link-active::after {
+  width: 80%;
 }
 
 /* Button hover effect */
@@ -170,6 +175,11 @@ watch(() => route.path, () => {
 
   .nav-link::after {
     display: none;
+  }
+
+  /* Active state on mobile - use background highlight instead of underline */
+  .nav-link.router-link-active {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
   }
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
-  <section class="py-5 bg-light">
+  <section class="py-5 bg-white">
     <div class="container">
       <!-- Section Header -->
       <div class="row mb-5">
-        <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+        <div class="col-lg-10 mx-auto text-center" data-aos="fade-up">
           <h2 class="display-5 fw-bold mb-3">{{ $t('partners.testimonials.title') }}</h2>
-          <p class="lead text-muted">{{ $t('partners.testimonials.subtitle') }}</p>
+          <p class="lead text-body-secondary mb-0">{{ $t('partners.testimonials.subtitle') }}</p>
         </div>
       </div>
 
@@ -226,19 +226,75 @@ const getStatLabel = (stat: Stat) => {
 
 <style scoped>
 .hover-lift {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
 }
 
 .hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.12)!important;
+  border-color: rgba(13, 110, 253, 0.1);
 }
 
 .icon-box {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover .icon-box {
+  transform: scale(1.15) rotate(5deg);
+  background: rgba(13, 110, 253, 0.15) !important;
+}
+
+/* Impact card */
+.bg-primary {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%) !important;
+}
+
+/* Dark mode support */
+:global([data-bs-theme="dark"]) section {
+  background: var(--bs-dark) !important;
+}
+
+:global([data-bs-theme="dark"]) .hover-lift {
+  background: var(--bs-dark) !important;
+  border-color: rgba(13, 110, 253, 0.15);
+}
+
+:global([data-bs-theme="dark"]) .hover-lift:hover {
+  background: #2d3436 !important;
+  box-shadow: 0 16px 40px rgba(13, 110, 253, 0.2)!important;
+  border-color: rgba(13, 110, 253, 0.3);
+}
+
+:global([data-bs-theme="dark"]) .icon-box {
+  background: rgba(13, 110, 253, 0.15) !important;
+}
+
+:global([data-bs-theme="dark"]) .card:hover .icon-box {
+  background: rgba(13, 110, 253, 0.25) !important;
+}
+
+/* Stats animation */
+.h4 {
+  transition: color 0.2s ease;
+}
+
+.card:hover .h4 {
   transform: scale(1.1);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hover-lift,
+  .icon-box,
+  .h4 {
+    transition: none !important;
+  }
+
+  .hover-lift:hover,
+  .card:hover .icon-box,
+  .card:hover .h4 {
+    transform: none !important;
+  }
 }
 </style>

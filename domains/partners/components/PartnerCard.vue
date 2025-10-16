@@ -128,16 +128,18 @@ const getCategoryColor = (category: string): string => {
 
 <style scoped>
 .partner-card {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-lift {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
 }
 
 .hover-lift:hover {
   transform: translateY(-8px);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  box-shadow: 0 16px 40px rgba(0,0,0,.12)!important;
+  border-color: rgba(13, 110, 253, 0.1);
 }
 
 .partner-logo-container {
@@ -159,15 +161,94 @@ const getCategoryColor = (category: string): string => {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover .partner-logo {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .partner-logo-placeholder {
   width: 80px;
   height: 80px;
   margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover .partner-logo-placeholder {
+  transform: scale(1.1);
+  background: rgba(13, 110, 253, 0.1) !important;
 }
 
 .card-body {
   position: relative;
+}
+
+.card-title {
+  transition: color 0.2s ease;
+}
+
+.hover-lift:hover .card-title {
+  color: var(--bs-primary);
+}
+
+.badge {
+  transition: all 0.2s ease;
+}
+
+.hover-lift:hover .badge {
+  transform: scale(1.05);
+}
+
+.btn-outline-primary {
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+/* Dark mode support */
+:global([data-bs-theme="dark"]) .hover-lift {
+  background: var(--bs-dark) !important;
+  border-color: rgba(13, 110, 253, 0.15);
+}
+
+:global([data-bs-theme="dark"]) .hover-lift:hover {
+  background: #2d3436 !important;
+  box-shadow: 0 16px 40px rgba(13, 110, 253, 0.2)!important;
+  border-color: rgba(13, 110, 253, 0.3);
+}
+
+:global([data-bs-theme="dark"]) .partner-logo-placeholder {
+  background: rgba(13, 110, 253, 0.1) !important;
+}
+
+:global([data-bs-theme="dark"]) .hover-lift:hover .partner-logo-placeholder {
+  background: rgba(13, 110, 253, 0.2) !important;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .partner-card,
+  .hover-lift,
+  .partner-logo,
+  .partner-logo-placeholder,
+  .badge,
+  .btn-outline-primary {
+    transition: none !important;
+  }
+
+  .hover-lift:hover,
+  .hover-lift:hover .partner-logo,
+  .hover-lift:hover .partner-logo-placeholder,
+  .hover-lift:hover .badge,
+  .btn-outline-primary:hover {
+    transform: none !important;
+  }
 }
 </style>

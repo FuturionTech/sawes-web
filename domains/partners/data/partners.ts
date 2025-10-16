@@ -6,7 +6,7 @@ export interface Partner {
     en: string
   }
   logo?: string
-  category: 'international' | 'bilateral' | 'ngo' | 'private' | 'government' | 'academic'
+  category: 'international' | 'bilateral' | 'ngo' | 'private' | 'government'
   description: {
     fr: string
     en: string
@@ -110,56 +110,8 @@ export const partners: Partner[] = [
     yearStarted: 2004,
     featured: true
   },
-  {
-    id: 'world-bank',
-    name: 'Banque Mondiale',
-    fullName: {
-      fr: 'Banque Mondiale',
-      en: 'World Bank'
-    },
-    category: 'international',
-    description: {
-      fr: 'Partenaire pour le financement de projets d\'infrastructure hydraulique et de développement durable.',
-      en: 'Partner for financing hydraulic infrastructure and sustainable development projects.'
-    },
-    website: 'https://www.worldbank.org',
-    region: 'International',
-    featured: false
-  },
-  {
-    id: 'undp',
-    name: 'PNUD',
-    fullName: {
-      fr: 'Programme des Nations Unies pour le Développement',
-      en: 'United Nations Development Programme'
-    },
-    category: 'international',
-    description: {
-      fr: 'Collaboration pour les programmes de développement durable et de renforcement des capacités.',
-      en: 'Collaboration on sustainable development and capacity building programs.'
-    },
-    website: 'https://www.undp.org',
-    region: 'International',
-    featured: false
-  },
 
   // BILATERAL COOPERATION
-  {
-    id: 'giz',
-    name: 'GIZ',
-    fullName: {
-      fr: 'Coopération Internationale Allemande',
-      en: 'German International Cooperation'
-    },
-    category: 'bilateral',
-    description: {
-      fr: 'Coopération technique allemande pour le développement des capacités dans le secteur de l\'eau.',
-      en: 'German technical cooperation for capacity development in the water sector.'
-    },
-    website: 'https://www.giz.de',
-    region: 'Europe',
-    featured: false
-  },
   {
     id: 'taiwan',
     name: 'République de Chine (Taïwan)',
@@ -192,38 +144,6 @@ export const partners: Partner[] = [
     projects: ['soum-2005'],
     region: 'Middle East',
     yearStarted: 2005,
-    featured: false
-  },
-  {
-    id: 'usaid',
-    name: 'USAID',
-    fullName: {
-      fr: 'Agence des États-Unis pour le Développement International',
-      en: 'United States Agency for International Development'
-    },
-    category: 'bilateral',
-    description: {
-      fr: 'Soutien aux initiatives de développement durable dans le secteur de l\'eau et de l\'environnement.',
-      en: 'Support for sustainable development initiatives in water and environment sector.'
-    },
-    website: 'https://www.usaid.gov',
-    region: 'North America',
-    featured: false
-  },
-  {
-    id: 'jica',
-    name: 'JICA',
-    fullName: {
-      fr: 'Agence Japonaise de Coopération Internationale',
-      en: 'Japan International Cooperation Agency'
-    },
-    category: 'bilateral',
-    description: {
-      fr: 'Coopération technique japonaise pour les projets d\'eau et d\'assainissement.',
-      en: 'Japanese technical cooperation for water and sanitation projects.'
-    },
-    website: 'https://www.jica.go.jp',
-    region: 'Asia',
     featured: false
   },
 
@@ -261,22 +181,6 @@ export const partners: Partner[] = [
     website: 'https://www.crepa.org',
     region: 'West Africa',
     yearStarted: 2009,
-    featured: false
-  },
-  {
-    id: 'water-aid',
-    name: 'WaterAid',
-    fullName: {
-      fr: 'WaterAid',
-      en: 'WaterAid'
-    },
-    category: 'ngo',
-    description: {
-      fr: 'ONG internationale travaillant pour l\'accès universel à l\'eau potable et à l\'assainissement.',
-      en: 'International NGO working for universal access to clean water and sanitation.'
-    },
-    website: 'https://www.wateraid.org',
-    region: 'International',
     featured: false
   },
 
@@ -436,40 +340,6 @@ export const partners: Partner[] = [
     yearStarted: 2015,
     featured: false
   },
-
-  // ACADEMIC & RESEARCH
-  {
-    id: '2ie',
-    name: '2iE',
-    fullName: {
-      fr: 'Institut International d\'Ingénierie de l\'Eau et de l\'Environnement',
-      en: 'International Institute for Water and Environmental Engineering'
-    },
-    category: 'academic',
-    description: {
-      fr: 'Collaboration académique et recherche appliquée dans les domaines de l\'eau et de l\'environnement.',
-      en: 'Academic collaboration and applied research in water and environmental fields.'
-    },
-    website: 'https://www.2ie-edu.org',
-    region: 'Burkina Faso',
-    featured: false
-  },
-  {
-    id: 'ird',
-    name: 'IRD',
-    fullName: {
-      fr: 'Institut de Recherche pour le Développement',
-      en: 'Research Institute for Development'
-    },
-    category: 'academic',
-    description: {
-      fr: 'Partenariat pour la recherche scientifique appliquée aux ressources en eau en Afrique.',
-      en: 'Partnership for applied scientific research on water resources in Africa.'
-    },
-    website: 'https://www.ird.fr',
-    region: 'France',
-    featured: false
-  },
 ]
 
 export const partnerCategories = [
@@ -502,10 +372,5 @@ export const partnerCategories = [
     id: 'government',
     label: { fr: 'Gouvernement & Institutions Publiques', en: 'Government & Public Institutions' },
     icon: 'bi-building'
-  },
-  {
-    id: 'academic',
-    label: { fr: 'Académique & Recherche', en: 'Academic & Research' },
-    icon: 'bi-book'
   }
 ]

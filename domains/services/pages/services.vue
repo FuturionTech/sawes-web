@@ -7,8 +7,8 @@
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb" class="mb-4">
           <ol class="breadcrumb bg-transparent">
-            <li class="breadcrumb-item"><NuxtLink to="/" class="text-decoration-none">{{ $t('breadcrumbs.home') }}</NuxtLink></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ $t('breadcrumbs.expertise') }}</li>
+            <li class="breadcrumb-item"><NuxtLink to="/" class="text-decoration-none text-primary">{{ $t('breadcrumbs.home') }}</NuxtLink></li>
+            <li class="breadcrumb-item active text-body" aria-current="page">{{ $t('breadcrumbs.expertise') }}</li>
           </ol>
         </nav>
 
@@ -18,7 +18,7 @@
               <i class="bi-award-fill me-2"></i>
               {{ $t('homepage.hero.badge') }}
             </div>
-            <h1 class="display-3 fw-bold mb-4">{{ $t('expertise.title') }}</h1>
+            <h1 class="display-3 fw-bold mb-4 text-body-emphasis">{{ $t('expertise.title') }}</h1>
             <p class="lead text-body-secondary mb-4 fs-5" style="max-width: 750px; margin: 0 auto;">
               {{ $t('expertise.subtitle') }}
             </p>
@@ -26,25 +26,25 @@
             <!-- Stats Row -->
             <div class="row row-cols-2 row-cols-md-4 g-3 g-md-4 mt-3">
               <div class="col">
-                <div class="stat-card p-3 rounded-3 bg-white shadow-sm h-100">
+                <div class="stat-card p-3 rounded-3 bg-body-secondary bg-opacity-50 shadow-sm h-100">
                   <div class="fs-2 fw-bold text-primary mb-1">25+</div>
                   <div class="small text-body-secondary">{{ $t('homepage.stats.years_label') }}</div>
                 </div>
               </div>
               <div class="col">
-                <div class="stat-card p-3 rounded-3 bg-white shadow-sm h-100">
+                <div class="stat-card p-3 rounded-3 bg-body-secondary bg-opacity-50 shadow-sm h-100">
                   <div class="fs-2 fw-bold text-primary mb-1">30+</div>
                   <div class="small text-body-secondary">{{ $t('homepage.stats.projects_label') }}</div>
                 </div>
               </div>
               <div class="col">
-                <div class="stat-card p-3 rounded-3 bg-white shadow-sm h-100">
+                <div class="stat-card p-3 rounded-3 bg-body-secondary bg-opacity-50 shadow-sm h-100">
                   <div class="fs-2 fw-bold text-primary mb-1">15+</div>
                   <div class="small text-body-secondary">{{ $t('homepage.stats.partners_label') }}</div>
                 </div>
               </div>
               <div class="col">
-                <div class="stat-card p-3 rounded-3 bg-white shadow-sm h-100">
+                <div class="stat-card p-3 rounded-3 bg-body-secondary bg-opacity-50 shadow-sm h-100">
                   <div class="fs-2 fw-bold text-primary mb-1">7+</div>
                   <div class="small text-body-secondary">{{ $t('homepage.stats.regions_label') }}</div>
                 </div>
@@ -424,25 +424,16 @@ useHead({
 <style scoped>
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: var(--bs-body-bg);
   min-height: 400px;
+  border-bottom: 1px solid var(--bs-border-color);
 }
 
 .hero-pattern {
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(13, 110, 253, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(13, 110, 253, 0.05) 0%, transparent 50%);
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(var(--bs-primary-rgb), 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(var(--bs-primary-rgb), 0.05) 0%, transparent 50%);
   background-size: 100% 100%;
-}
-
-:global([data-bs-theme="dark"]) .hero-section {
-  background: linear-gradient(135deg, #1a1d20 0%, #2d3436 100%);
-}
-
-:global([data-bs-theme="dark"]) .hero-pattern {
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(13, 110, 253, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(13, 110, 253, 0.08) 0%, transparent 50%);
 }
 
 /* Stat Cards */
@@ -453,11 +444,6 @@ useHead({
 .stat-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
-}
-
-:global([data-bs-theme="dark"]) .stat-card {
-  background: var(--bs-dark) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Context Card */

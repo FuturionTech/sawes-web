@@ -198,7 +198,9 @@ Optional (for MCP integrations):
 
 ## Specialized Agents
 
-This repository has custom Claude Code agents in `.claude/agents/` for designing specific pages:
+This repository has custom Claude Code agents in `.claude/agents/` for designing specific pages and components:
+
+### Page-Specific Agents
 - `homepage-designer.md` - Homepage/landing page design
 - `about-designer.md` - About Us page design
 - `partners-designer.md` - Partners page design
@@ -207,9 +209,15 @@ This repository has custom Claude Code agents in `.claude/agents/` for designing
 - `contact-designer.md` - Contact page design
 - `resources-designer.md` - Resources/News page design
 - `expertise-designer.md` - Services/Expertise page design
+
+### Component-Specific Agents
+- `header-designer.md` - Header/navbar component (navigation, theme toggle, language selector, mobile menu)
+- `footer-designer.md` - Footer component (footer layout, links, contact info, social media)
+
+### Meta-Agent
 - `knowledge-updater.md` - Meta-agent for updating other agents with new knowledge
 
-These agents specialize in their respective domains and should be used when working on those pages.
+These agents specialize in their respective domains and should be used when working on those pages or components.
 
 ### Using the Knowledge Updater Agent
 

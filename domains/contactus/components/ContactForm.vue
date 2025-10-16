@@ -139,7 +139,7 @@
     <!-- Error Message -->
     <div v-if="showError" class="alert alert-danger mt-4" role="alert">
       <i class="bi bi-exclamation-triangle me-2"></i>
-      Something went wrong. Please try again or email us directly at info@sawesneutral.com
+      Something went wrong. Please try again or email us directly at sawes.bf@gmail.com
     </div>
   </form>
 </template>
