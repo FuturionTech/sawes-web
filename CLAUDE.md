@@ -207,8 +207,16 @@ This repository has custom Claude Code agents in `.claude/agents/` for designing
 - `contact-designer.md` - Contact page design
 - `resources-designer.md` - Resources/News page design
 - `expertise-designer.md` - Services/Expertise page design
+- `knowledge-updater.md` - Meta-agent for updating other agents with new knowledge
 
 These agents specialize in their respective domains and should be used when working on those pages.
+
+### Using the Knowledge Updater Agent
+
+When you discover new patterns, implementations, or make architectural decisions:
+1. Use the `knowledge-updater` agent to identify which agents need updates
+2. The knowledge-updater will propose specific changes to keep agent knowledge current
+3. This ensures consistency across all specialized agents
 
 ## Important Notes
 
@@ -229,6 +237,22 @@ These agents specialize in their respective domains and should be used when work
 - Check section structure: `pnpm run check:sections`
 - Performance monitor shows in development builds
 
+### Imagery Guidelines
+
+**IMPORTANT: Cultural Representation**
+- SAWES is a Burkina Faso company - always use images featuring Black African professionals
+- Show authentic African contexts: Burkina Faso landscapes, infrastructure, communities
+- Focus on professional imagery: engineers, consultants, field workers in action
+- Image topics: water infrastructure (dams, boreholes), sanitation facilities, environmental projects
+- Store all images in `/public/assets/images/` directory structure
+- Optimize images for performance (reasonable file sizes, appropriate formats)
+
+**Image Generation Prompts:**
+When generating images with AI tools (ChatGPT/DALL-E), use prompts like:
+```
+"Professional photograph of Black African [engineer/consultant] at [water/sanitation/environmental] site in Burkina Faso context, photorealistic, high quality"
+```
+
 ### When Adding Features
 1. Determine which domain the feature belongs to
 2. If creating a new domain, follow the modular structure
@@ -236,3 +260,4 @@ These agents specialize in their respective domains and should be used when work
 4. Add routes via domain's `index.ts` module
 5. Update translations in both locale files
 6. Test both French and English routes
+7. Ensure any imagery follows the cultural representation guidelines above
