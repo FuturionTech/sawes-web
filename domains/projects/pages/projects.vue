@@ -209,8 +209,12 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed, watch } from 'vue'
+import { useI18n, useHead } from '#imports'
 import { getAllProjects, getProjectStats, getProjectYears, getFeaturedProjects } from '../data/projects'
 import type { Project } from '../data/projects'
+import ProjectFilters from '../components/ProjectFilters.vue'
+import ProjectCard from '../components/ProjectCard.vue'
 
 const { t, locale } = useI18n()
 

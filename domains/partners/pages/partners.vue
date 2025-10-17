@@ -40,6 +40,10 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useI18n } from '#imports'
+import PartnersHero from '../components/PartnersHero.vue'
+import PartnersGrid from '../components/PartnersGrid.vue'
+import PartnerTestimonials from '../components/PartnerTestimonials.vue'
+import BecomePartner from '../components/BecomePartner.vue'
 
 const { t } = useI18n()
 
